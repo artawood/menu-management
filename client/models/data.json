@@ -1,0 +1,624 @@
+{
+  "menu": {
+    "section": ["Burgers", "Dogs", "Sandwiches", "Fries", "Drinks"],
+    "modifiers": [
+      {
+        "id": 1,
+        "name": "Bowl",
+        "calories": -240,
+        "price": 0,
+        "groupName": "Prefer no Bun?",
+        "groupMin": 0,
+        "groupMax": 1
+      },
+      {
+        "id": 2,
+        "name": "Lettuce Wrap",
+        "calories": -240,
+        "price": 0,
+        "groupName": "Prefer no Bun?",
+        "groupMin": 0,
+        "groupMax": 1
+      },
+      {
+        "id": 3,
+        "name": "Plain",
+        "calories": 0,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 4,
+        "name": "All the Way",
+        "calories": 240,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 5,
+        "name": "Mayo",
+        "calories": 110,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 6,
+        "name": "Lettuce",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 7,
+        "name": "Pickle",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 8,
+        "name": "Tomato",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 9,
+        "name": "Onions",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 10,
+        "name": "Grilled Onion",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 11,
+        "name": "Grilled Mushroom",
+        "calories": 20,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 12,
+        "name": "Ketchup",
+        "calories": 30,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 13,
+        "name": "Mustard",
+        "calories": 0,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 14,
+        "name": "Relish",
+        "calories": 15,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 15,
+        "name": "Jalapeno Peppers",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 16,
+        "name": "Grilled Jalapeno Peppers",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 17,
+        "name": "Green Peppers",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 18,
+        "name": "Grilled Green Peppers",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 19,
+        "name": "Bar-B-Que Sauce",
+        "calories": 50,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 20,
+        "name": "Hot Sauce",
+        "calories": 0,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 21,
+        "name": "A-1 Sauce",
+        "calories": 110,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 22,
+        "name": "Add Cheese",
+        "calories": 140,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 23,
+        "name": "Add Bacon",
+        "calories": 80,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      },
+      {
+        "id": 24,
+        "name": "Add Extra Patty",
+        "calories": 300,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22
+      }
+    ],
+    "item": [
+      {
+        "id": 1,
+        "name": "Hamburger",
+        "price": 7.99,
+        "section": "Burgers",
+        "imgURL": "../models/images/hamburger.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 1,
+            "name":"Bowl",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name":"Lettuce Wrap",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name":"Plain",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name":"All The Way",
+            "calories": 240,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name":"Mayo",
+            "calories": 110,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 6,
+            "name":"Lettuce",
+            "calories": 5,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 7,
+            "name":"Pickle",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Cheeseburger",
+        "price": 8.69,
+        "section": "Burgers",
+        "imgURL": "../models/images/hamburger.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 1,
+            "name":"Bowl",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name":"Lettuce Wrap",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name":"Plain",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name":"All The Way",
+            "calories": 240,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name":"Mayo",
+            "calories": 110,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 6,
+            "name":"Lettuce",
+            "calories": 5,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 7,
+            "name":"Pickle",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Bacon Burger",
+        "price": 8.99,
+        "section": "Burgers",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 1,
+            "name":"Bowl",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name":"Lettuce Wrap",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name":"Plain",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name":"All The Way",
+            "calories": 240,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name":"Mayo",
+            "calories": 110,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 6,
+            "name":"Lettuce",
+            "calories": 5,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 7,
+            "name":"Pickle",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Bacon Cheeseburger",
+        "price": 9.69,
+        "section": "Burgers",
+        "imgURL": "../models/images/hamburger.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 1,
+            "name":"Bowl",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name":"Lettuce Wrap",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name":"Plain",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name":"All The Way",
+            "calories": 240,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name":"Mayo",
+            "calories": 110,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 6,
+            "name":"Lettuce",
+            "calories": 5,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 7,
+            "name":"Pickle",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Little Hamburger",
+        "price": 5.99,
+        "section": "Burgers",
+        "imgURL": "../models/images/hamburger.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 1,
+            "name":"Bowl",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name":"Lettuce Wrap",
+            "calories":-240,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name":"Plain",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name":"All The Way",
+            "calories": 240,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name":"Mayo",
+            "calories": 110,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 6,
+            "name":"Lettuce",
+            "calories": 5,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          },
+          {
+            "id": 7,
+            "name":"Pickle",
+            "calories": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "price": 0,
+            "soldOut": false
+          }
+        ]
+      }
+    ]
+  }
+}
