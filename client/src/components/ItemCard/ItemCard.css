@@ -1,0 +1,16 @@
+
+.item-card {
+  max-width: 400px;
+  max-height: 200px;
+  margin-top: 15px;
+}
+
+.item-img-overflow {
+  overflow: hidden;
+}
+
+.item-img {
+  max-width: 165px;
+  max-height: 200px;
+}
+

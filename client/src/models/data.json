@@ -225,7 +225,7 @@
         "name": "Hamburger",
         "price": 7.99,
         "section": "Burgers",
-        "imgURL": "../models/images/hamburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/hamburger.png",
         "soldOut": false,
         "modifier": [
           {
@@ -305,7 +305,7 @@
         "name": "Cheeseburger",
         "price": 8.69,
         "section": "Burgers",
-        "imgURL": "../models/images/hamburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/bacon-cheeseburger.png",
         "soldOut": false,
         "modifier": [
           {
@@ -385,6 +385,7 @@
         "name": "Bacon Burger",
         "price": 8.99,
         "section": "Burgers",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/bacon-burger.png",
         "soldOut": false,
         "modifier": [
           {
@@ -464,7 +465,7 @@
         "name": "Bacon Cheeseburger",
         "price": 9.69,
         "section": "Burgers",
-        "imgURL": "../models/images/hamburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/cheeseburger.png",
         "soldOut": false,
         "modifier": [
           {

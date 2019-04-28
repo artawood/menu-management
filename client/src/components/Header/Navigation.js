@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 
 const Navigation = props => (
-  <Navbar bg="light" variant="dark">
+  <Navbar bg="light" variant="dark" fixed="top" className="shadow">
     <Navbar.Brand href="#home">
       <img
         alt=""
