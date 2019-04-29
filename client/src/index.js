@@ -8,8 +8,8 @@ import * as firebase from 'firebase';
 require('dotenv').config();
 
 const config = {
-  apiKey: "AIzaSyCStus9gV_mFG5xDbd3ymJ5nXQ0jQIUneA",
-  authDomain: "menu-management-3b231.firebaseapp.com",
+  apiKey: process.env.API_SECRET_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
   databaseURL: "https://menu-management-3b231.firebaseio.com",
   projectId: "menu-management-3b231",
   storageBucket: "menu-management-3b231.appspot.com",
