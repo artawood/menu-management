@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as firebase from 'firebase';
-
 require('dotenv').config();
 
-const config = {
+// Initialize Firebase
+var config = {
   apiKey: process.env.API_SECRET_KEY,
   authDomain: process.env.AUTH_DOMAIN,
   databaseURL: "https://menu-management-3b231.firebaseio.com",
@@ -16,6 +16,8 @@ const config = {
   messagingSenderId: "655566171234"
 };
 firebase.initializeApp(config);
+
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 
-const Navigation = props => (
+const Navigation = () => (
   <Navbar bg="light" variant="dark" fixed="top" className="shadow">
+    <h1><i class="fas fa-bars"></i></h1>
     <Navbar.Brand href="#home">
       <img
         alt=""
