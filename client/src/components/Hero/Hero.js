@@ -1,19 +1,14 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+import './Hero.css';
 
 const Hero = props => (
-  <Jumbotron>
-    <Container>
+  <Jumbotron className="hero-clear">
     <h1>Menu Management System</h1>
+    <h2>Five Guys - AL0193</h2>
     <p>
       This is a prototype of the ItsaCheckamte Menu Management System
     </p>
-    <p>
-      <Button variant="primary">Learn more</Button>
-    </p>
-    </Container>
   </Jumbotron>
 );
 

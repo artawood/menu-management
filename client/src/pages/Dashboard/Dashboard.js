@@ -18,38 +18,73 @@ import data from '../../models/data.json';
 class App extends Component {
 
   state = {
-    data
+    burgers: [],
+    dogs: []
   };
 
+  componentDidMount() {
+    this.renderSections();
+  }
+
+  renderSections = () => {
+    const burgers = data.menu.item.filter( item => item.section == "Burgers");
+    const dogs = data.menu.item.filter( item => item.section == "Dogs");
+    this.setState({ 
+      burgers: burgers,
+      dogs: dogs
+    });
+  };
+
+  //todo create function for soldOut Button
+  
   render() {
     return (
       <div className="App">
         <Header></Header>
-        <Row className="shift-down">
-          <Col md="2">
-            <Sidebar></Sidebar>
-          </Col>
-          <Col md="10">
-          <Hero></Hero>
-            <Container fluid>
-              <Row>
-                {this.state.data.menu.item.map(data => (
-                  <Col md="4">
-                    <ItemCard
-                    id={data.id}
-                    key={data.id}
-                    name={data.name}
-                    price={data.price}
-                    image={data.imgURL}
-                    soldOut={data.soldOut}
-                    modifier={data.modifier}
-                    />
-                  </Col>
-                ))}
-              </Row>
-            </Container>
-          </Col>
-        </Row>
+        <Container fluid>
+          <Row className="shift-down">
+            <Col md="2">
+              <Sidebar></Sidebar>
+            </Col>
+            <Col md="10">
+            <Hero></Hero>
+              <Container>
+                <h3>Burgers</h3>
+                <Row>
+                  {this.state.burgers.map(burger => (
+                    <Col md="6">
+                      <ItemCard
+                      id={burger.id}
+                      key={burger.id}
+                      name={burger.name}
+                      price={burger.price}
+                      image={burger.imgURL}
+                      soldOut={burger.soldOut}
+                      modifier={burger.modifier}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+                <h3>Dogs</h3>
+                <Row>
+                  {this.state.dogs.map(dog => (
+                    <Col md="6">
+                      <ItemCard
+                      id={dog.id}
+                      key={dog.id}
+                      name={dog.name}
+                      price={dog.price}
+                      image={dog.imgURL}
+                      soldOut={dog.soldOut}
+                      modifier={dog.modifier}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+              </Container>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

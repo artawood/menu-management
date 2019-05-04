@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-
+import "./ItemDetails.css"
 //Layout
 import Header from "../../components/Header";
 
@@ -18,27 +18,19 @@ import ModifierList from '../../components/ModifierList';
 import data from '../../models/data.json';
 
 class ItemDetails extends Component {
-  // Uncomment when ready to pull data from API
-  // constructor(props){
-  //   super(props);
-
-  //   this.state = {
-  //   name: this.props.name,
-  //   price: this.props.price,
-  //   description: this.props.description,
-  //   imgURL: this.props.imgURL,
-  //   modifiers: this.props.modifiers
-  //   }
-  // }
 
   state = {
-    name: "Hamburger",
-    price: "7.99",
-    description: "two fresh patties grilled to perfection",
-    imgURL: "https://www.itsacheckmate.com/wp-content/uploads/2019/04/hamburger.png",
-    modifiers: data.menu.modifiers
+    item: data.menu.item[0]
   }
-  
+
+  componentDidMount() {
+    this.loadData();
+  }
+
+  loadData = () => {
+    let id = this.props.match.params.id;
+    this.setState({ item: data.menu.item[id]});
+  }
 
   render() {
     return (
@@ -59,17 +51,17 @@ class ItemDetails extends Component {
             <Col md="8">
               <Row>
                 <Col md="3">
-                  <img src={this.state.imgURL}/>
+                  <img className="item-detail-image" src={this.state.item.imgURL ? this.state.item.imgURL : "https://imbindonesia.com/images/placeholder/camera.jpg"}/>
                 </Col>
                 <Col md="9">
-                  <h2>{this.state.name}</h2>
+                  <h2>{this.state.item.name}</h2>
                   <div>
                     <h3>Price</h3>
-                    <p>{this.state.price}</p>
+                    <p>{this.state.item.price}</p>
                   </div>
                   <div>
                     <h3>Description</h3>
-                    <p>{this.state.description}</p>
+                    <p>{this.state.item.description}</p>
                   </div>
                 </Col>
               </Row>
@@ -91,7 +83,7 @@ class ItemDetails extends Component {
                 <th>Sold Out</th>
               </tr>
             </thead>
-            {this.state.modifiers.map(modifier =>
+            {this.state.item.modifier.map(modifier =>
                 <ModifierList
                 id={modifier.id}
                 key={modifier.id}
