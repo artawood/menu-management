@@ -1,8 +1,8 @@
 
 .item-card {
-  width: 400px;
+  width: 450px;
   height: 200px;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .item-img-overflow {
@@ -19,10 +19,23 @@
   color: #000000;
 }
 
+.soldOutToggle {
+  font-size: 24px;
+}
+
 .itemSoldOutBtn {
   font-size: 18px;
 }
 
 .isSoldOut {
   color: #04A89B;
+}
+
+.see-details {
+  text-decoration: none;
+  color: #04A89B;
+}
+
+.see-details:hover {
+  color: #6F6D6D;
 }

@@ -15,24 +15,22 @@ const ItemCard = props => (
       <Col md={props.image ? "7" : "12"}>
         <Card.Body>
           <Card.Title>{props.name} <span className="edit-icon"><i class="fas fa-pen"></i></span></Card.Title>
-          <Card.Subtitle className="mt-2 text-muted">{props.price} <span className="edit-icon"><i class="fas fa-pen"></i></span></Card.Subtitle>
-          {props.soldOut ? 
-            <Card.Text>
+          <Card.Title className="mt-2 text-muted">{props.price} <span className="edit-icon"><i class="fas fa-pen"></i></span></Card.Title>
+            <Card.Text className="pt-2">
+            {props.soldOut ?
               <p className="itemSoldOutBtn">
-                <span className="isSoldOut"><i className="fas fa-toggle-on"></i></span>
-                <span className="">Sold Out</span>
-              </p>
-            </Card.Text> : 
-            <Card.Text>
-              <p className="itemSoldOutBtn">
-                <i className="fas fa-toggle-off"></i>
-                <span className="text-muted">Sold Out</span>
-              </p>
-            </Card.Text>}
+                <span className="soldOutToggle mr-2 isSoldOut"><i className="fas fa-toggle-on"></i></span>
+                Sold Out
+              </p> : 
+              <p className="itemSoldOutBtn text-muted">
+                <span className="soldOutToggle mr-2"><i className="fas fa-toggle-off"></i></span>
+                Sold Out
+              </p>}
+            </Card.Text>
           <Card.Text>
             <Row>
-              <Col xs="9"><Link to={"/itemdetails/" + props.id}>See Details</Link></Col>
-              <Col><i class="fas fa-trash-alt"></i></Col>
+              <Col xs="9"><Link className="see-details" to={"/itemdetails/" + props.id}>See Details</Link></Col>
+              <Col><span onClick={() => { if (window.confirm("Are you sure you want to delete " + props.name + "?")) props.removeItem(props.id, props.name)}} className="text-muted"><i class="fas fa-trash-alt"></i></span></Col>
             </Row>
           </Card.Text>
         </Card.Body>
