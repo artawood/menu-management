@@ -19,41 +19,53 @@ class App extends Component {
 
   state = {
     burgers: [],
-    dogs: []
+    dogs: [],
+    isSoldOut: false
   };
 
   componentDidMount() {
     this.renderSections();
   }
 
+  //functions
   renderSections = () => {
-    const burgers = data.menu.item.filter( item => item.section == "Burgers");
-    const dogs = data.menu.item.filter( item => item.section == "Dogs");
+    let burgers = data.menu.item.filter( item => item.section == "Burgers");
+    let dogs = data.menu.item.filter( item => item.section == "Dogs");
     this.setState({ 
       burgers: burgers,
       dogs: dogs
     });
   };
 
+  removeItem = (id) => {
+    let burgers = data.menu.item.filter( item => item.id !== id);
+    let dogs = data.menu.item.filter( item => item.id !== id);
+    this.setState({ 
+      burgers: burgers,
+      dogs: dogs
+    });
+  }
+
   //todo create function for soldOut Button
-  
+
   render() {
     return (
       <div className="App">
         <Header></Header>
         <Container fluid>
           <Row className="shift-down">
-            <Col md="2">
+            <Col md="3">
               <Sidebar></Sidebar>
             </Col>
-            <Col md="10">
-            <Hero></Hero>
-              <Container>
-                <h3>Burgers</h3>
+            <Col md="9">
+              <Hero></Hero>
+              <Container className="px-4">
+                <h4 className="pt-4">BURGERS</h4>
                 <Row>
                   {this.state.burgers.map(burger => (
-                    <Col md="6">
+                    <Col>
                       <ItemCard
+                      removeItem={this.removeItem}
                       id={burger.id}
                       key={burger.id}
                       name={burger.name}
@@ -65,10 +77,10 @@ class App extends Component {
                     </Col>
                   ))}
                 </Row>
-                <h3>Dogs</h3>
+                <h4 className="mt-5">DOGS</h4>
                 <Row>
                   {this.state.dogs.map(dog => (
-                    <Col md="6">
+                    <Col>
                       <ItemCard
                       id={dog.id}
                       key={dog.id}

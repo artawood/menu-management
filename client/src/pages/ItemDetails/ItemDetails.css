@@ -1,3 +1,38 @@
+.item-detail-page {
+  margin-top: 175px;
+}
+
+.back-to-dashboard {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+
 .item-detail-image {
   width: 100%;
+}
+
+.item-name {
+  font-size: 2.25rem;
+}
+
+.item-detail-header {
+  font-size: 1.75rem;
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.item-description {
+  font-size: 1.25rem
+}
+
+.edit-btn {
+  height: 45px;	
+  width: 129px;	
+  color: #04A89B;	
+  font-family: Roboto;	
+  font-size: 30px;	
+  font-weight: 500;	
+  line-height: 35px;
 }

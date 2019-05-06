@@ -34,17 +34,18 @@ class ItemDetails extends Component {
 
   render() {
     return (
-      <div className="shift-down">
+      <div className="item-detail-page">
         <Header></Header>
         <Container>
           {/* Navigation and Timestamp */}
-          <Row>
+          <Row className="pb-4">
             <Col md="8">
-            <Link to="/">
-              <h2>&lt; Back to Dashboard</h2>
+            <Link className="back-to-dashboard" to="/">
+              <h4>&lt; Back to Dashboard</h4>
             </Link>
             </Col>
-            <Col md="4">Timestamp</Col>
+            <Col md="4">
+            <p className="text-muted float-right">Timestamp</p></Col>
           </Row>
           {/* Item Image and details */}
           <Row>
@@ -54,21 +55,21 @@ class ItemDetails extends Component {
                   <img className="item-detail-image" src={this.state.item.imgURL ? this.state.item.imgURL : "https://imbindonesia.com/images/placeholder/camera.jpg"}/>
                 </Col>
                 <Col md="9">
-                  <h2>{this.state.item.name}</h2>
-                  <div>
-                    <h3>Price</h3>
-                    <p>{this.state.item.price}</p>
+                  <h1 className="item-name">{this.state.item.name}</h1>
+                  <div className="pt-2">
+                    <h2 className="item-detail-header">Price</h2>
+                    <p className="price text-muted">{this.state.item.price}</p>
                   </div>
-                  <div>
-                    <h3>Description</h3>
-                    <p>{this.state.item.description}</p>
+                  <div className="pt-2">
+                    <h4 className="item-detail-header">Description</h4>
+                    <p className="item-description">{this.state.item.description}</p>
                   </div>
                 </Col>
               </Row>
             </Col>
             {/* Edit Button */}
-            <Col md="2">
-              <Button variant="outline-secondary">Edit</Button>
+            <Col md="4">
+              <Button className="edit-btn float-right" variant="outline-secondary">Edit</Button>
             </Col>
           </Row>
           <h2>Options</h2>
