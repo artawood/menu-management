@@ -1,27 +1,27 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./ItemDetails.css"
+import "./ItemDetails.css";
 //Layout
 import Header from "../../components/Header";
 
 //Bootstrap Components
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Table from 'react-bootstrap/Table';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Table from "react-bootstrap/Table";
 
 //Component
-import ModifierList from '../../components/ModifierList';
+import ModifierList from "../../components/ModifierList";
+import SorryNoEditModal from "../../components/Modals/SorryNoEditModal";
 
 //dummy data
-import data from '../../models/data.json';
+import data from "../../models/data.json";
 
 class ItemDetails extends Component {
-
   state = {
     item: data.menu.item[0]
-  }
+  };
 
   componentDidMount() {
     this.loadData();
@@ -29,30 +29,38 @@ class ItemDetails extends Component {
 
   loadData = () => {
     let id = this.props.match.params.id;
-    this.setState({ item: data.menu.item[id]});
-  }
+    this.setState({ item: data.menu.item[id] });
+  };
 
   render() {
     return (
       <div className="item-detail-page">
-        <Header></Header>
+        <Header />
         <Container>
           {/* Navigation and Timestamp */}
           <Row className="pb-4">
             <Col md="8">
-            <Link className="back-to-dashboard" to="/">
-              <h4>&lt; Back to Dashboard</h4>
-            </Link>
+              <Link className="back-to-dashboard" to="/">
+                <h4>&lt; Back to Dashboard</h4>
+              </Link>
             </Col>
             <Col md="4">
-            <p className="text-muted float-right">Timestamp</p></Col>
+              <p className="text-muted float-right">Timestamp</p>
+            </Col>
           </Row>
           {/* Item Image and details */}
           <Row>
             <Col md="8">
               <Row>
                 <Col md="3">
-                  <img className="item-detail-image" src={this.state.item.imgURL ? this.state.item.imgURL : "https://imbindonesia.com/images/placeholder/camera.jpg"}/>
+                  <img
+                    className="item-detail-image"
+                    src={
+                      this.state.item.imgURL
+                        ? this.state.item.imgURL
+                        : "https://imbindonesia.com/images/placeholder/camera.jpg"
+                    }
+                  />
                 </Col>
                 <Col md="9">
                   <h1 className="item-name">{this.state.item.name}</h1>
@@ -62,14 +70,16 @@ class ItemDetails extends Component {
                   </div>
                   <div className="pt-2">
                     <h4 className="item-detail-header">Description</h4>
-                    <p className="item-description">{this.state.item.description}</p>
+                    <p className="item-description">
+                      {this.state.item.description}
+                    </p>
                   </div>
                 </Col>
               </Row>
             </Col>
             {/* Edit Button */}
             <Col md="4">
-              <Button className="edit-btn float-right" variant="outline-secondary">Edit</Button>
+              <SorryNoEditModal />
             </Col>
           </Row>
           <h2>Options</h2>
@@ -84,8 +94,8 @@ class ItemDetails extends Component {
                 <th>Sold Out</th>
               </tr>
             </thead>
-            {this.state.item.modifier.map(modifier =>
-                <ModifierList
+            {this.state.item.modifier.map(modifier => (
+              <ModifierList
                 id={modifier.id}
                 key={modifier.id}
                 name={modifier.name}
@@ -95,11 +105,12 @@ class ItemDetails extends Component {
                 groupMax={modifier.groupMax}
                 price={modifier.price}
                 soldOut={modifier.soldOut}
-                />)}
+              />
+            ))}
           </Table>
         </Container>
       </div>
-    )
+    );
   }
 }
 
