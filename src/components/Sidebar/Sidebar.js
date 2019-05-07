@@ -1,9 +1,10 @@
 import React from "react";
 import FetchData from "../Modals/FetchDataModal";
 import PushChanges from "../Modals/PushChangesModal";
+import SorryNoAddModal from "../Modals/SorryNoAddModal";
 import "./Sidebar.css";
 
-const Sidebar = props => (
+const Sidebar = () => (
   <nav class="d-none d-md-block bg-gray sidebar">
     <div className="sidebar-sticky">
       <ul className="nav flex-column option">
@@ -17,14 +18,7 @@ const Sidebar = props => (
         </li>
         <FetchData />
         <PushChanges />
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <span data-feather="add-item">
-              <i class="fas fa-plus" />{" "}
-            </span>
-            Add Items
-          </a>
-        </li>
+        <SorryNoAddModal />
       </ul>
       <div class="dropdown-divider" />
       <ul className="nav flex-column mb-2 other-option">
