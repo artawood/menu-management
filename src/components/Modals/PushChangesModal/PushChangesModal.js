@@ -61,7 +61,7 @@ class SampleModal extends React.Component {
         <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Body>
             <h4>Are you sure you want to push changes to:</h4>
-            <h5>Third Party Apps</h5>
+            <h5 className="pt-2">Third Party Apps</h5>
             <ul>
               {this.state.thirdParties.map(thirdParty => (
                 <li>{thirdParty}</li>
@@ -74,7 +74,7 @@ class SampleModal extends React.Component {
               ))}
             </ul>
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="mx-auto">
             <Button
               variant="outline-secondary"
               onClick={this.handlePushingChanges}
