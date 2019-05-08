@@ -1,7 +1,11 @@
 import React from "react";
+
+// Modal Components
 import FetchData from "../Modals/FetchDataModal";
 import PushChanges from "../Modals/PushChangesModal";
 import SorryNoAddModal from "../Modals/SorryNoAddModal";
+import FeatureNotAvailableModal from "../Modals/FeatureNotAvailableModal";
+import FeatureNotAvailableModal2 from "../Modals/FeatureNotAvailableModal2";
 import "./Sidebar.css";
 
 const Sidebar = () => (
@@ -22,22 +26,8 @@ const Sidebar = () => (
       </ul>
       <div class="dropdown-divider" />
       <ul className="nav flex-column mb-2 other-option">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <span data-feather="file-text">
-              <i class="fas fa-cog" />{" "}
-            </span>
-            Setting
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            <span data-feather="file-text">
-              <i class="fas fa-sign-out-alt" />{" "}
-            </span>
-            Log Out
-          </a>
-        </li>
+        <FeatureNotAvailableModal />
+        <FeatureNotAvailableModal2 />
       </ul>
     </div>
   </nav>

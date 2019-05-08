@@ -1,12 +1,26 @@
 /* Implementing Roboto Font for all text tags */
 
-h1, h2, h3, h4, h5, h6, a, p {
-  font-family: 'Roboto', sans-serif;
-  color: #4A4A4A;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
 }
 
 .col {
   flex-grow: 0;
+}
+
+.modal-footer {
+  border-top: 0px solid #dee2e6;
+}
+.modal-header {
+  border-bottom: 0px solid #dee2e6;
 }
 
 .login-text {
@@ -14,11 +28,10 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 
 .username {
-  color: #0FA79C;
+  color: #0fa79c;
   text-decoration: none;
 }
 /*shift menu display down*/
 .shift-down {
   padding-top: 50px;
 }
-
