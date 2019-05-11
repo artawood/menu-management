@@ -1,5 +1,5 @@
 .hero-clear {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 50px;
 }
 
@@ -14,5 +14,9 @@
 .filter-item {
   font-size: 24px;
   text-decoration: none;
-  color: #4A4A4A; 
+  color: #4a4a4a;
+}
+
+.filter-item:hover {
+  color: #04a89b;
 }

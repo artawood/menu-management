@@ -1,4 +1,3 @@
-
 .item-card {
   width: 450px;
   height: 200px;
@@ -10,13 +9,19 @@
 }
 
 .item-img {
-  width: 100%;
-  height: 200px;
+  max-width: 150px;
+  max-height: 175px;
+  padding: 25px 10px;
 }
 
 .edit-icon {
   font-size: 12px;
   color: #000000;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  cursor: pointer;
 }
 
 .soldOutToggle {
@@ -28,14 +33,14 @@
 }
 
 .isSoldOut {
-  color: #04A89B;
+  color: #04a89b;
 }
 
 .see-details {
   text-decoration: none;
-  color: #04A89B;
+  color: #04a89b;
 }
 
 .see-details:hover {
-  color: #6F6D6D;
+  color: #6f6d6d;
 }
