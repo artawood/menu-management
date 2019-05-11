@@ -250,77 +250,247 @@
         "price": 7.99,
         "description": "Two fresh, hand formed patties hot off the grill and placed on a soft, toasted bun. Choose as many toppings as you want.",
         "section": "Burgers",
-        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/hamburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": true,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -331,7 +501,7 @@
         "price": 8.69,
         "description": "Two slices of Kraft American Cheese melted between two freshly grilled patties on a soft, toasted bun.",
         "section": "Burgers",
-        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/bacon-cheeseburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
@@ -412,77 +582,247 @@
         "price": 8.99,
         "description": "Our regular two-patty burger, layered with four pieces of crispy, sweet applewood-smoked bacon.",
         "section": "Burgers",
-        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/bacon-burger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -493,77 +833,247 @@
         "price": 9.69,
         "description": "Two hand-formed patties, grilled to order - with two strips of crispy bacon and two slices of Kraft American Cheese – all on a soft, sesame seed bun.",
         "section": "Burgers",
-        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/04/cheeseburger.png",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -581,70 +1091,240 @@
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -655,77 +1335,247 @@
         "price": 5.99,
         "description": "Like our regular cheeseburger, just one grilled to order, hand-crafted patty instead of two.",
         "section": "Burgers",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -736,77 +1586,247 @@
         "price": 5.99,
         "description": "One freshly made patty grilled to order with two slices of crispy applewood-smoked bacon on top.",
         "section": "Burgers",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -817,77 +1837,247 @@
         "price": 5.99,
         "description": "One Five Guys burger patty with crispy, sweet applewood-smoked bacon and Kraft American cheese.",
         "section": "Burgers",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_burger_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -898,7 +2088,7 @@
         "price": 5.39,
         "description": "Hebrew National Hotdog, split and grilled lengthwise for a caramelized exterior.",
         "section": "Dogs",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_hotdog_Red.png",
         "soldOut": false,
         "modifier": [
           {
@@ -979,7 +2169,7 @@
         "price": 6.09,
         "description": "Hebrew National Hotdog, split and grilled lengthwise with a layer of Kraft American Cheese on top and any of your favorite toppings.",
         "section": "Dogs",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_hotdog_Red.png",
         "soldOut": false,
         "modifier": [
           {
@@ -1060,77 +2250,247 @@
         "price": 6.39,
         "description": "Hebrew National Hotdog, split and grilled with a layer of crispy, sweet applewood-smoked bacon.",
         "section": "Dogs",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_hotdog_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
-            "calories": 0,
+            "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]
@@ -1141,77 +2501,1412 @@
         "price": 7.09,
         "description": "Hebrew National Hotdog, split and grilled with a layer of crispy, sweet applewood-smoked bacon.",
         "section": "Dogs",
-        "imgURL": "",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_hotdog_Red.png",
         "soldOut": false,
         "modifier": [
           {
             "id": 0,
             "name": "Bowl",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 1,
             "name": "Lettuce Wrap",
             "calories": -240,
+            "price": 0,
             "groupName": "Prefer no Bun?",
             "groupMin": 0,
             "groupMax": 1,
-            "price": 0,
             "soldOut": false
           },
           {
             "id": 2,
             "name": "Plain",
             "calories": 0,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 3,
-            "name": "All The Way",
+            "name": "All the Way",
             "calories": 240,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 4,
             "name": "Mayo",
             "calories": 110,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
+            "groupMax": 22,
             "soldOut": false
           },
           {
             "id": 5,
             "name": "Lettuce",
             "calories": 5,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
-            "groupMax": 1,
-            "price": 0,
-            "soldOut": false
+            "groupMax": 22,
+            "soldOut": true
           },
           {
             "id": 6,
             "name": "Pickle",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
             "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Veggie Sandwich",
+        "price": 7.09,
+        "description": "Freshly grilled onions, mushrooms, and green peppers, layered with lettuce and tomatoes, on a soft toasted bun. Or, start with the bun and build your own from scratch. Not a veggie burger.",
+        "section": "Sandwiches",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_sandwich_Red.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 0,
+            "name": "Bowl",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 1,
+            "name": "Lettuce Wrap",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name": "Plain",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name": "All the Way",
+            "calories": 240,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name": "Mayo",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name": "Lettuce",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 6,
+            "name": "Pickle",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Cheese Veggie Sandwich",
+        "price": 7.09,
+        "description": "Grilled onions, mushrooms, green peppers with melted American-style cheese, served on a toasted golden bun with lettuce and tomatoes. Plus any of your favorite 16 toppings!",
+        "section": "Sandwiches",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_sandwich_Red.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 0,
+            "name": "Bowl",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 1,
+            "name": "Lettuce Wrap",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name": "Plain",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name": "All the Way",
+            "calories": 240,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name": "Mayo",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name": "Lettuce",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 6,
+            "name": "Pickle",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Grilled Cheese",
+        "price": 7.09,
+        "description": "Kraft American cheese melted on an inside-out Five Guys bun with any toppings of your choice and grilled until golden brown.",
+        "section": "Sandwiches",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_sandwich_Red.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 0,
+            "name": "Bowl",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 1,
+            "name": "Lettuce Wrap",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name": "Plain",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name": "All the Way",
+            "calories": 240,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name": "Mayo",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name": "Lettuce",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 6,
+            "name": "Pickle",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "BLT",
+        "price": 7.09,
+        "description": "Six whole strips of American smokehouse crispy bacon, two fresh tomato slices, mayo, and hand-torn lettuce on a Five Guys bun.",
+        "section": "Sandwiches",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_sandwich_Red.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 0,
+            "name": "Bowl",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 1,
+            "name": "Lettuce Wrap",
+            "calories": -240,
+            "price": 0,
+            "groupName": "Prefer no Bun?",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name": "Plain",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name": "All the Way",
+            "calories": 240,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name": "Mayo",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name": "Lettuce",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 6,
+            "name": "Pickle",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Tomato",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Onions",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Grilled Onion",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 10,
+            "name": "Grilled Mushroom",
+            "calories": 20,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 11,
+            "name": "Ketchup",
+            "calories": 30,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 12,
+            "name": "Mustard",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 13,
+            "name": "Relish",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 14,
+            "name": "Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 15,
+            "name": "Grilled Jalapeno Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 16,
+            "name": "Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 17,
+            "name": "Grilled Green Peppers",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 18,
+            "name": "Bar-B-Que Sauce",
+            "calories": 50,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 29,
+            "name": "Hot Sauce",
+            "calories": 0,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 20,
+            "name": "A-1 Sauce",
+            "calories": 110,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 21,
+            "name": "Add Cheese",
+            "calories": 140,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 22,
+            "name": "Add Bacon",
+            "calories": 80,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 23,
+            "name": "Add Extra Patty",
+            "calories": 300,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "Five Guys Style",
+        "price": 7.09,
+        "description": "Hot, fresh, boardwalk style fries, made to order each and every time. Cut fresh, cooked twice, crispy on the outside and mashed-potato on the inside.",
+        "section": "Fries",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_fries_Red.png",
+        "soldOut": false,
+        "modifier": [{}]
+      },
+      {
+        "id": 17,
+        "name": "Cajun Style",
+        "price": 7.09,
+        "description": "Made to order Five Guys boardwalk style fries, with a heavy dose of Cajun spices. Unsure? Get the seasoning on the side.",
+        "section": "Fries",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_fries_Red.png",
+        "soldOut": false,
+        "modifier": [{}]
+      },
+      {
+        "id": 18,
+        "name": "Coca-Cola",
+        "price": 2.99,
+        "description": "",
+        "section": "Drinks",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_drink_Red.png",
+        "soldOut": false,
+        "modifier": [{}]
+      },
+      {
+        "id": 19,
+        "name": "Sprite",
+        "price": 2.99,
+        "description": "",
+        "section": "Drinks",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_drink_Red.png",
+        "soldOut": false,
+        "modifier": [{}]
+      },
+      {
+        "id": 20,
+        "name": "Fanta",
+        "price": 2.99,
+        "description": "",
+        "section": "Drinks",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_drink_Red.png",
+        "soldOut": false,
+        "modifier": [{}]
+      },
+      {
+        "id": 21,
+        "name": "Milkshakes",
+        "price": 4.99,
+        "description": "",
+        "section": "Shakes",
+        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/Five_Guys_milkshake_Red.png",
+        "soldOut": false,
+        "modifier": [
+          {
+            "id": 0,
+            "name": "Bacon",
+            "calories": 80,
+            "price": 0,
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
             "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 1,
+            "name": "Bananas",
+            "calories": 10,
             "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 1,
+            "soldOut": false
+          },
+          {
+            "id": 2,
+            "name": "Cherries",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 3,
+            "name": "Chocolate",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 4,
+            "name": "Coffee",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 5,
+            "name": "Malted Milk",
+            "calories": 15,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 6,
+            "name": "Oreo Cookie Pieces",
+            "calories": 5,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": true
+          },
+          {
+            "id": 7,
+            "name": "Peanut butter",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 8,
+            "name": "Salted Caramel",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
+            "soldOut": false
+          },
+          {
+            "id": 9,
+            "name": "Strawberries",
+            "calories": 10,
+            "price": 0,
+            "groupName": "Unlimited Toppings",
+            "groupMin": 0,
+            "groupMax": 22,
             "soldOut": false
           }
         ]

@@ -61,7 +61,7 @@ const ItemCard = props => (
                     )
                       props.removeItem(props.id, props.name);
                   }}
-                  className="text-muted float-right"
+                  className="text-muted float-right delete-icon"
                 >
                   <i class="fas fa-trash-alt" />
                 </span>
