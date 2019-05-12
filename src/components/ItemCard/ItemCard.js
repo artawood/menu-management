@@ -46,12 +46,12 @@ const ItemCard = props => (
           </Card.Text>
           <Card.Text>
             <Row>
-              <Col xs="9">
+              <Col xs="7">
                 <Link className="see-details" to={"/itemdetails/" + props.id}>
                   See Details
                 </Link>
               </Col>
-              <Col>
+              <Col xs="5">
                 <span
                   onClick={() => {
                     if (
@@ -61,7 +61,7 @@ const ItemCard = props => (
                     )
                       props.removeItem(props.id, props.name);
                   }}
-                  className="text-muted float-right delete-icon"
+                  className="text-muted delete-icon"
                 >
                   <i class="fas fa-trash-alt" />
                 </span>

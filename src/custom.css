@@ -35,3 +35,11 @@ p {
 .shift-down {
   padding-top: 50px;
 }
+
+.checkmate-primary-btn {
+  background-color: #0fa79c;
+}
+
+.checkmate-primary-btn:hover {
+  background-color: #4a4a4a;
+}
