@@ -26,6 +26,7 @@ import data from "../../models/data.json";
 class EditItemDetails extends Component {
   state = {
     item: data.menu.item[0],
+    modifier: data.menu.item[0].modifier,
     EditItemName: "",
     EditItemPrice: "",
     EditItemDescription: "",
@@ -40,6 +41,7 @@ class EditItemDetails extends Component {
     let id = this.props.match.params.id;
     this.setState({
       item: data.menu.item[id],
+      modifier: data.menu.item[id].modifier,
       EditItemName: data.menu.item[id].name,
       EditItemPrice: data.menu.item[id].price,
       EditItemDescription: data.menu.item[id].description,
@@ -52,6 +54,14 @@ class EditItemDetails extends Component {
     this.setState({
       [name]: value
     });
+  };
+
+  removeModifier = modId => {
+    let id = this.props.match.params.id;
+    let modifier = data.menu.item[id].modifier.filter(
+      modifier => modifier.id !== modId
+    );
+    this.setState({ modifier: modifier });
   };
 
   render() {
@@ -133,9 +143,10 @@ class EditItemDetails extends Component {
                 <th>Modifier Group Min</th>
                 <th>Modifier Group Max</th>
                 <th>Sold Out</th>
+                <th>Delete</th>
               </tr>
             </thead>
-            {this.state.item.modifier.map(modifier => (
+            {this.state.modifier.map(modifier => (
               <EditModifierList
                 id={modifier.id}
                 key={modifier.id}
@@ -146,6 +157,7 @@ class EditItemDetails extends Component {
                 groupMax={modifier.groupMax}
                 price={modifier.price}
                 soldOut={modifier.soldOut}
+                removeModifier={this.removeModifier}
               />
             ))}
           </Table>

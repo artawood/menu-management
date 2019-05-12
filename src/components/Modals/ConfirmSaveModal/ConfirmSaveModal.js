@@ -62,12 +62,13 @@ class ConfirmSaveModal extends React.Component {
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Body>
-            Thank you for trying out this prototype! This was designed and
+          <Modal.Body className="text-center">
+            Thank you for trying out this demo! Since this is prototype, data
+            cannot be edited and updated at this moment. This was designed and
             developed by <a href="www.itsacheckmate.com">ItsaCheckmate, Inc.</a>{" "}
             If you like the design and concept, we appreciate your feedback!
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="mx-auto">
             <Button variant="outline-secondary" onClick={this.handleSurvey}>
               Yes! Take me to your survey!
             </Button>
