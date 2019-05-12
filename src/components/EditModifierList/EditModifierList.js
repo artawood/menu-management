@@ -19,6 +19,21 @@ const EditModifierList = props => (
         )} */}
         <ToggleSwitch />
       </td>
+      <td className="text-muted text-center">
+        <span>
+          <i
+            onClick={() => {
+              if (
+                window.confirm(
+                  "Are you sure you want to delete " + props.name + "?"
+                )
+              )
+                props.removeModifier(props.id);
+            }}
+            class="fas fa-minus-circle"
+          />
+        </span>
+      </td>
     </tr>
   </tbody>
 );
