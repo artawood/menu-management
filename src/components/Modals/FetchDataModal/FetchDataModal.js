@@ -1,7 +1,6 @@
 import React from "react";
 
 //Bootstrap Imports
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 class FetchDataModal extends React.Component {
@@ -46,7 +45,7 @@ class FetchDataModal extends React.Component {
         >
           <Modal.Body className="text-center">
             <Modal.Title>Fetching Latest Data</Modal.Title>
-            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="fetching" />
           </Modal.Body>
         </Modal>
       </div>

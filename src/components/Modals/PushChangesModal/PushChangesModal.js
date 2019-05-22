@@ -1,4 +1,4 @@
-import React, { component } from "react";
+import React from "react";
 
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
@@ -95,7 +95,7 @@ class SampleModal extends React.Component {
         >
           <Modal.Body className="text-center">
             <Modal.Title>Pushing Changes</Modal.Title>
-            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="pushing" />
           </Modal.Body>
         </Modal>
       </div>

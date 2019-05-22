@@ -38,14 +38,14 @@ class App extends Component {
 
   //functions
   loadData = () => {
-    let burgers = data.menu.item.filter(item => item.section == "Burgers");
-    let dogs = data.menu.item.filter(item => item.section == "Dogs");
+    let burgers = data.menu.item.filter(item => item.section === "Burgers");
+    let dogs = data.menu.item.filter(item => item.section === "Dogs");
     let sandwiches = data.menu.item.filter(
-      item => item.section == "Sandwiches"
+      item => item.section === "Sandwiches"
     );
-    let fries = data.menu.item.filter(item => item.section == "Fries");
-    let drinks = data.menu.item.filter(item => item.section == "Drinks");
-    let shakes = data.menu.item.filter(item => item.section == "Shakes");
+    let fries = data.menu.item.filter(item => item.section === "Fries");
+    let drinks = data.menu.item.filter(item => item.section === "Drinks");
+    let shakes = data.menu.item.filter(item => item.section === "Shakes");
     this.setState({
       burgers: burgers,
       dogs: dogs,
