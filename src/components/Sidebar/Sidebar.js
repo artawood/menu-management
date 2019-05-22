@@ -13,7 +13,7 @@ const Sidebar = () => (
     <div className="sidebar-sticky">
       <ul className="nav flex-column option">
         <li className="nav-item">
-          <a className="nav-link active" href="#">
+          <a className="nav-link active">
             <span className="isActive" data-feather="home">
               <i class="fas fa-home" />{" "}
             </span>

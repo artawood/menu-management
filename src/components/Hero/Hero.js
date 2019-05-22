@@ -33,7 +33,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showBurgers == true
+            props.showAll === false && props.showBurgers === true
               ? "isActive filter-item"
               : "filter-item"
           }
@@ -45,7 +45,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showDogs == true
+            props.showAll === false && props.showDogs === true
               ? "isActive filter-item"
               : "filter-item"
           }
@@ -57,7 +57,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showSandwiches == true
+            props.showAll === false && props.showSandwiches === true
               ? "isActive filter-item"
               : "filter-item"
           }
@@ -69,7 +69,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showFries == true
+            props.showAll === false && props.showFries === true
               ? "isActive filter-item"
               : "filter-item"
           }
@@ -81,7 +81,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showDrinks == true
+            props.showAll === false && props.showDrinks === true
               ? "isActive filter-item"
               : "filter-item"
           }
@@ -93,7 +93,7 @@ const Hero = props => (
       <Nav.Item>
         <Nav.Link
           className={
-            props.showAll == false && props.showShakes == true
+            props.showAll === false && props.showShakes === true
               ? "isActive filter-item"
               : "filter-item"
           }

@@ -6,10 +6,6 @@ import isBoolean from "lodash/isBoolean";
 import isFunction from "lodash/isFunction";
 import "./index.css";
 
-// Bootstrap
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 class ToggleSwitch extends Component {
   state = { enabled: this.enabledFromProps() };
 

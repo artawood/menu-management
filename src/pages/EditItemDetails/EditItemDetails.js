@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "./EditItemDetails.css";
 //Layout
 import Header from "../../components/Header";
@@ -8,7 +7,6 @@ import Header from "../../components/Header";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import ButtonToolbar from "react-bootstrap/ButtonToolbar";
 import Table from "react-bootstrap/Table";
 import InputGroup from "react-bootstrap/InputGroup";
@@ -90,6 +88,7 @@ class EditItemDetails extends Component {
                         ? this.state.item.imgURL
                         : "https://imbindonesia.com/images/placeholder/camera.jpg"
                     }
+                    alt={this.state.item.name}
                   />
                 </Col>
                 <Col md="9">

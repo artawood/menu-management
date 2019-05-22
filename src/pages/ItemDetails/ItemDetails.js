@@ -13,7 +13,6 @@ import Table from "react-bootstrap/Table";
 
 //Component
 import ModifierList from "../../components/ModifierList";
-import SorryNoEditModal from "../../components/Modals/SorryNoEditModal";
 
 //dummy data
 import data from "../../models/data.json";
@@ -60,6 +59,7 @@ class ItemDetails extends Component {
                         ? this.state.item.imgURL
                         : "https://imbindonesia.com/images/placeholder/camera.jpg"
                     }
+                    alt={this.state.item.name}
                   />
                 </Col>
                 <Col md="9">
