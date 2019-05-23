@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
@@ -12,7 +13,10 @@ const Hero = props => (
         <h1>Menu Management</h1>
       </Col>
       <Col md="4">
-        <p>Last pushed {}</p>
+        <p>
+          Last pushed{" "}
+          <Moment format="MMMM Do YYYY, h:mm:ss a">{props.datePushed}</Moment>
+        </p>
       </Col>
     </Row>
     <h2>Five Guys - AL0193</h2>
