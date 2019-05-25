@@ -1,10 +1,10 @@
 import React from "react";
-import { Redirect, Link } from "react-router-dom";
+import { ReactComponent as DeleteIcon } from "../../../models/images/icon-delete.svg";
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-class CancelSaveModal extends React.Component {
+class RemoveItemModal extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.handleShow = this.handleShow.bind(this);
@@ -13,7 +13,8 @@ class CancelSaveModal extends React.Component {
 
     this.state = {
       show: false,
-      cancel: false
+      cancel: false,
+      save: false
     };
   }
 
@@ -31,25 +32,28 @@ class CancelSaveModal extends React.Component {
     });
   }
 
+  handleSave() {
+    this.setState({ save: true });
+  }
+
   render() {
-    if (this.state.cancel === true) {
-      return <Redirect to={"/"} />;
-    }
     return (
       <div>
-        <Link className="back-to-dashboard" onClick={this.handleShow}>
-          <h4>&lt; Back to Dashboard</h4>
-        </Link>
+        <DeleteIcon onClick={this.handleShow} />
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header className="text-center" closeButton>
-            <Modal.Title>
-              Are you sure you want to return to Dashboard without saving?
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body />
-          <Modal.Footer className="mx-auto">
-            <Button variant="outline-secondary" onClick={this.handleCancel}>
+          <Modal.Header closeButton />
+          <Modal.Title className="pb-5">
+            Are you sure you want to <br />
+            delete {this.props.name} ?
+          </Modal.Title>
+          <Modal.Footer className="mx-auto pt-2">
+            <Button
+              variant="outline-secondary"
+              onClick={() => {
+                this.props.removeItem(this.props.id, this.props.name);
+              }}
+            >
               Yes
             </Button>
             <Button variant="outline-secondary" onClick={this.handleClose}>
@@ -62,4 +66,4 @@ class CancelSaveModal extends React.Component {
   }
 }
 
-export default CancelSaveModal;
+export default RemoveItemModal;

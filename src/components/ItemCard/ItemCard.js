@@ -11,6 +11,7 @@ import Col from "react-bootstrap/Col";
 import SoldOutSwitch from "../ToggleSwitch";
 import EditItemNameModal from "../Modals/EditItemNameModal";
 import EditItemPriceModal from "../Modals/EditItemPriceModal";
+import RemoveItemModal from "../Modals/RemoveItemModal";
 
 //Custom CSS
 import "./ItemCard.css";
@@ -116,6 +117,11 @@ class ItemCard extends React.Component {
                 className="text-muted delete-icon"
               >
                 <DeleteIcon />
+                {/* <RemoveItemModal
+                id={this.state.id}
+                name={this.state.name}
+                removeItem={this.props.removeItem()}
+              /> */}
               </span>
             </Col>
           </Row>

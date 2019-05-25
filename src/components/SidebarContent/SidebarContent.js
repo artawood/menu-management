@@ -63,7 +63,7 @@ const SidebarContent = props => {
                 <span className="isActive" data-feather="home">
                   <i class="fas fa-home" />{" "}
                 </span>
-                Home <span className="sr-only">(current)</span>
+                <span className="curren-page">Home</span>
               </a>
             </li>
             <FetchData />
