@@ -60,7 +60,7 @@ class EditItemDetails extends Component {
     let modifier = data.menu.item[id].modifier.filter(
       modifier => modifier.id !== modId
     );
-    this.setState({ modifier: modifier });
+    this.setState({ modifiers: modifier });
   };
 
   render() {

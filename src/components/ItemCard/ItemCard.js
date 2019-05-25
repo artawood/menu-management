@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as DeleteIcon } from "../../models/images/icon-delete.svg";
 
 // Bootstrap
 import Card from "react-bootstrap/Card";
@@ -105,7 +104,7 @@ class ItemCard extends React.Component {
               </Link>
             </Col>
             <Col xs="7">
-              <span
+              {/* <span
                 onClick={() => {
                   if (
                     window.confirm(
@@ -116,13 +115,13 @@ class ItemCard extends React.Component {
                 }}
                 className="text-muted delete-icon"
               >
-                <DeleteIcon />
-                {/* <RemoveItemModal
+                <DeleteIcon /> */}
+              <RemoveItemModal
                 id={this.state.id}
                 name={this.state.name}
-                removeItem={this.props.removeItem()}
-              /> */}
-              </span>
+                removeItem={this.props.removeItem}
+              />
+              {/* </span> */}
             </Col>
           </Row>
         </Card.Footer>
