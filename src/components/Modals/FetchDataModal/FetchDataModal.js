@@ -3,6 +3,10 @@ import React from "react";
 //Bootstrap Imports
 import Modal from "react-bootstrap/Modal";
 
+const style = {
+  padding: "50px 0px 0px 0px"
+};
+
 class FetchDataModal extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -37,15 +41,13 @@ class FetchDataModal extends React.Component {
           </a>
         </li>
 
-        <Modal
-          show={this.state.show}
-          onHide={this.handleClose}
-          centered
-          size="sm"
-        >
-          <Modal.Body className="text-center">
-            <Modal.Title>Fetching Latest Data</Modal.Title>
-            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="fetching" />
+        <Modal show={this.state.show} onHide={this.handleClose} centered>
+          <Modal.Title style={style}>Fetching latest data</Modal.Title>
+          <Modal.Body className="text-center py-2">
+            <img
+              src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+              alt="fetching"
+            />
           </Modal.Body>
         </Modal>
       </div>

@@ -19,8 +19,7 @@ const Hero = props => (
         </p>
       </Col>
     </Row>
-    <h2>Five Guys - AL0193</h2>
-    <p>This is a prototype of the ItsaCheckmate Menu Management Dashboard</p>
+    <h2 class="mb-5">Five Guys - AL0193</h2>
     <div class="dropdown-divider" />
     <Nav
       activeKey="all"
@@ -28,7 +27,11 @@ const Hero = props => (
     >
       <Nav.Item>
         <Nav.Link
-          className={props.showAll ? "isActive filter-item" : "filter-item"}
+          className={
+            props.showAll
+              ? "isActive filter-item category-text first-nav"
+              : "filter-item category-text first-nav"
+          }
           onClick={props.renderAll}
         >
           All
@@ -38,8 +41,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showBurgers === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderBurgers}
         >
@@ -50,8 +53,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showDogs === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderDogs}
         >
@@ -62,8 +65,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showSandwiches === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderSandwiches}
         >
@@ -74,8 +77,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showFries === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderFries}
         >
@@ -86,8 +89,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showDrinks === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderDrinks}
         >
@@ -98,8 +101,8 @@ const Hero = props => (
         <Nav.Link
           className={
             props.showAll === false && props.showShakes === true
-              ? "isActive filter-item"
-              : "filter-item"
+              ? "isActive filter-item category-text"
+              : "filter-item category-text"
           }
           onClick={props.renderShakes}
         >

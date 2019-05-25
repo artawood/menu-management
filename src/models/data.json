@@ -243,6 +243,108 @@
         "soldOut": false
       }
     ],
+    "milkShakeModifiers": [
+      {
+        "id": 0,
+        "name": "Bacon",
+        "calories": 80,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 1,
+        "soldOut": false
+      },
+      {
+        "id": 1,
+        "name": "Bananas",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 1,
+        "soldOut": false
+      },
+      {
+        "id": 2,
+        "name": "Cherries",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 3,
+        "name": "Chocolate",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 4,
+        "name": "Coffee",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 5,
+        "name": "Malted Milk",
+        "calories": 15,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 6,
+        "name": "Oreo Cookie Pieces",
+        "calories": 5,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 7,
+        "name": "Peanut butter",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 8,
+        "name": "Salted Caramel",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      },
+      {
+        "id": 9,
+        "name": "Strawberries",
+        "calories": 10,
+        "price": 0,
+        "groupName": "Unlimited Toppings",
+        "groupMin": 0,
+        "groupMax": 22,
+        "soldOut": false
+      }
+    ],
     "item": [
       {
         "id": 0,
@@ -501,7 +603,7 @@
         "price": 8.69,
         "description": "Two slices of Kraft American Cheese melted between two freshly grilled patties on a soft, toasted bun.",
         "section": "Burgers",
-        "imgURL": "https://www.itsacheckmate.com/wp-content/uploads/2019/05/icon-five_guys_burger_red.png",
+        "imgURL": "",
         "soldOut": false,
         "modifier": [
           {

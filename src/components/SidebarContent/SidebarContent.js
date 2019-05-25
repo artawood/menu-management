@@ -13,7 +13,9 @@ const styles = {
   sidebar: {
     width: 300,
     height: "100%",
-    padding: "150px 0px 0px 0px"
+    padding: "150px 0px 0px 0px",
+    boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px",
+    backgroundColor: "#F6F6F6"
   },
   sidebarLink: {
     display: "block",
@@ -72,7 +74,7 @@ const SidebarContent = props => {
           </ul>
           <div class="dropdown-divider" />
           <ul className="nav flex-column mb-2 other-option">
-            <FeatureNotAvailableModal />
+            {/* <FeatureNotAvailableModal /> */}
             <FeatureNotAvailableModal2 />
           </ul>
         </div>

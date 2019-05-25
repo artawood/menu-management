@@ -1,7 +1,33 @@
 .item-card {
-  width: 450px;
-  height: 200px;
+  width: 400px;
+  height: 210px;
   margin-top: 30px;
+}
+
+.card {
+  border-radius: 0rem;
+}
+
+.card-body {
+  padding: 15px 15px 0px 15px;
+}
+
+.card-footer {
+  border-top: 0px;
+  background-color: #ffffff;
+  padding: 0px 15px 10px;
+}
+
+.item-name-card {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+.item-price-card {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4a4a4a;
 }
 
 .item-img-overflow {
@@ -9,14 +35,23 @@
 }
 
 .item-img {
-  max-width: 150px;
-  max-height: 175px;
-  padding: 25px 10px;
+  max-width: 105px;
+  max-height: 200px;
+  padding: 0px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .edit-icon {
-  font-size: 12px;
-  color: #000000;
+  font-size: 16px;
+  color: #909090;
+  font-weight: 500;
+  float: left;
+}
+
+.delete-icon {
+  float: left;
 }
 
 .edit-icon:hover,
@@ -39,6 +74,7 @@
 .see-details {
   text-decoration: none;
   color: #04a89b;
+  line-height: 35px;
 }
 
 .see-details:hover {

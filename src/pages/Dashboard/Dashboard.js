@@ -11,7 +11,6 @@ import ItemCard from "../../components/ItemCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 
 // Data
 import data from "../../models/data.json";
@@ -206,6 +205,11 @@ class Dashboard extends React.Component {
 
   render() {
     const newTimeStamp = new Date().getTime();
+    const style = {
+      sidebarStyle: {
+        boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px"
+      }
+    };
     return (
       <div className="App">
         <Header toggleSidebar={this.onSetSidebarDocked} />
@@ -214,7 +218,7 @@ class Dashboard extends React.Component {
           docked={this.state.docked}
           pushTimeStamp={this.pushTimeStamp}
         >
-          <Container fluid className="pt-5">
+          <Container fluid className="pt-5 pl-6">
             <Hero
               className="pb-5"
               renderAll={this.renderAll}

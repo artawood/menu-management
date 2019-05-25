@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./EditItemDetails.css";
-//Layout
-import Header from "../../components/Header";
 
 //Bootstrap Components
 import Container from "react-bootstrap/Container";
@@ -17,6 +15,7 @@ import EditModifierList from "../../components/EditModifierList";
 import CancelSaveModal from "../../components/Modals/CancelSaveModal";
 import ConfirmSaveModal from "../../components/Modals/ConfirmSaveModal";
 import GoToDashboardWithOutSavingModal from "../../components/Modals/GoToDashboardWithOutSavingModal";
+import SorryNoAddOptionModal from "../../components/Modals/SorryNoAddOptionModal";
 
 //dummy data
 import data from "../../models/data.json";
@@ -24,7 +23,8 @@ import data from "../../models/data.json";
 class EditItemDetails extends Component {
   state = {
     item: data.menu.item[0],
-    modifier: data.menu.item[0].modifier,
+    itemName: data.menu.item[0].name,
+    modifiers: [],
     EditItemName: "",
     EditItemPrice: "",
     EditItemDescription: "",
@@ -39,7 +39,8 @@ class EditItemDetails extends Component {
     let id = this.props.match.params.id;
     this.setState({
       item: data.menu.item[id],
-      modifier: data.menu.item[id].modifier,
+      itemName: data.menu.item[id].name,
+      modifiers: data.menu.item[id].modifier,
       EditItemName: data.menu.item[id].name,
       EditItemPrice: data.menu.item[id].price,
       EditItemDescription: data.menu.item[id].description,
@@ -65,7 +66,6 @@ class EditItemDetails extends Component {
   render() {
     return (
       <div className="item-detail-page">
-        <Header />
         <Container>
           {/* Navigation and Timestamp */}
           <Row className="pb-4">
@@ -145,11 +145,12 @@ class EditItemDetails extends Component {
                 <th>Delete</th>
               </tr>
             </thead>
-            {this.state.modifier.map(modifier => (
+            {this.state.modifiers.map(modifier => (
               <EditModifierList
                 id={modifier.id}
                 key={modifier.id}
-                name={modifier.name}
+                itemName={this.state.itemName}
+                modifierName={modifier.name}
                 calories={modifier.calories}
                 groupName={modifier.groupName}
                 groupMin={modifier.groupMin}
@@ -160,10 +161,8 @@ class EditItemDetails extends Component {
               />
             ))}
           </Table>
-          <div className="pt-3 pb-5">
-            <h3>+ Add More Options</h3>
-          </div>
-          <ButtonToolbar className="mb-5">
+          <SorryNoAddOptionModal />
+          <ButtonToolbar className="my-5">
             <CancelSaveModal id={this.state.id} />
             <ConfirmSaveModal id={this.state.id} />
           </ButtonToolbar>
