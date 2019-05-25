@@ -80,7 +80,7 @@ class EditItemDetails extends Component {
           <Row>
             <Col md="8">
               <Row>
-                <Col md="3">
+                <Col md="4">
                   <img
                     className="item-detail-image"
                     src={
@@ -91,7 +91,7 @@ class EditItemDetails extends Component {
                     alt={this.state.item.name}
                   />
                 </Col>
-                <Col md="9">
+                <Col md="8" className="pl-5">
                   <InputGroup size="lg">
                     <FormControl
                       value={this.state.EditItemName}

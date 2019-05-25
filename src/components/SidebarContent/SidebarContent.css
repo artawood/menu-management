@@ -16,12 +16,16 @@
   color: #999;
 }
 
-.sidebar .nav-link.active {
-  color: #4a4a4a;
+.sidebar .nav-link .active {
+  color: #6f6d6d;
 }
 
 .isActive {
   color: #04a89b;
+}
+
+.currentPage {
+  color: #6f6d6d;
 }
 
 .sidebar .nav-link:hover .feather,

@@ -51,7 +51,7 @@ class ItemDetails extends Component {
           <Row>
             <Col md="8">
               <Row>
-                <Col md="3">
+                <Col md="4">
                   <img
                     className="item-detail-image"
                     src={
@@ -62,7 +62,7 @@ class ItemDetails extends Component {
                     alt={this.state.item.name}
                   />
                 </Col>
-                <Col md="9">
+                <Col md="8" className="pl-5">
                   <h1 className="item-name">{this.state.item.name}</h1>
                   <div className="pt-2">
                     <h2 className="item-detail-header">Price</h2>
