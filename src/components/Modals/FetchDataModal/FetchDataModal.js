@@ -4,7 +4,8 @@ import React from "react";
 import Modal from "react-bootstrap/Modal";
 
 const style = {
-  padding: "50px 0px 0px 0px"
+  padding: "50px 0px 0px 0px",
+  textAlign: "center"
 };
 
 class FetchDataModal extends React.Component {

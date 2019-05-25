@@ -7,9 +7,6 @@ import Modal from "react-bootstrap/Modal";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 
-//Components Imports
-import SorryNoSaveModal from "../SorryNoSaveModal";
-
 class EditItemPriceModal extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -67,7 +64,7 @@ class EditItemPriceModal extends React.Component {
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header closeButton>
-            <Modal.Title>Edit Item Price: $ {this.state.price}</Modal.Title>
+            <Modal.Title>Edit Item Price: {this.state.price}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <InputGroup size="lg">
@@ -80,7 +77,7 @@ class EditItemPriceModal extends React.Component {
               />
             </InputGroup>
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="mx-auto">
             <Button variant="secondary" onClick={this.handleClose}>
               Cancel
             </Button>

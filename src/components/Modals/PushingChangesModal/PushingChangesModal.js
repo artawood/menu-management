@@ -1,7 +1,6 @@
 import React from "react";
 
 //Bootstrap Imports
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 const PushingDataModal = () => (

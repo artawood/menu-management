@@ -77,7 +77,7 @@ class EditItemNameModal extends React.Component {
               />
             </InputGroup>
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="mx-auto">
             <Button variant="secondary" onClick={this.handleClose}>
               Cancel
             </Button>

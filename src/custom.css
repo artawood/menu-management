@@ -65,12 +65,11 @@ p {
   font-size: 38px;
   font-weight: 400;
   padding: 20px 0px 20px;
-  text-align: center;
 }
 
 .modal-content {
   border-radius: 0.6rem;
-  min-width: 700px;
+  min-width: 600px;
 }
 
 .close {

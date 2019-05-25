@@ -8,8 +8,16 @@ import Modal from "react-bootstrap/Modal";
 import data from "../../../models/data.json";
 
 const style = {
-  padding: "0px 200px 0px 0px",
-  margin: "0 auto"
+  modalBody: {
+    padding: "0px 200px 0px 0px",
+    margin: "0 auto"
+  },
+  modalContent: {
+    width: 400
+  },
+  modalTitle: {
+    paddingLeft: 120
+  }
 };
 
 class SampleModal extends React.Component {
@@ -63,17 +71,12 @@ class SampleModal extends React.Component {
           </a>
         </li>
 
-        <Modal
-          show={this.state.show}
-          onHide={this.handleClose}
-          centered
-          size="lg"
-        >
-          <Modal.Header closeButton className="text-center" />
-          <Modal.Title className="text-center">
+        <Modal show={this.state.show} onHide={this.handleClose} centered>
+          <Modal.Header closeButton className="" />
+          <Modal.Title style={style.modalTitle}>
             Are you sure you want <br /> to push changes to:
           </Modal.Title>
-          <Modal.Body style={style}>
+          <Modal.Body style={style.modalBody}>
             <h5 className="pt-2">Third Party Apps</h5>
             <ul>
               {this.state.thirdParties.map(thirdParty => (
