@@ -1,10 +1,12 @@
 import React from "react";
 import ToggleSwitch from "../ToggleSwitch";
-import { ReactComponent as DeleteIcon } from "../../models/images/icon-delete.svg";
 
 //Bootstrap Components
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+
+//Components
+import RemoveModifierModal from "../Modals/RemoveModifierModal";
 
 //dummy data
 import data from "../../models/data.json";
@@ -110,15 +112,10 @@ class EditModifierList extends React.Component {
           </td>
           <td className="text-muted text-center">
             <span>
-              <DeleteIcon
-                onClick={() => {
-                  if (
-                    window.confirm(
-                      "Are you sure you want to delete " + this.state.name + "?"
-                    )
-                  )
-                    this.props.removeModifier(this.state.id);
-                }}
+              <RemoveModifierModal
+                id={this.state.id}
+                name={this.state.name}
+                removeModifier={this.props.removeModifier}
               />
             </span>
           </td>

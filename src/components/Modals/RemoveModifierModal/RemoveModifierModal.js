@@ -10,7 +10,7 @@ class RemoveItemModal extends React.Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.handleCancel = this.handleCancel.bind(this);
-    this.removeItem = this.props.removeItem.bind(this);
+    this.removeModifier = this.props.removeModifier.bind(this);
 
     this.state = {
       show: false,
@@ -52,7 +52,7 @@ class RemoveItemModal extends React.Component {
             <Button
               variant="outline-secondary"
               onClick={() => {
-                this.removeItem(this.props.id, this.props.name);
+                this.removeModifier(this.props.id, this.props.name);
               }}
             >
               Yes
