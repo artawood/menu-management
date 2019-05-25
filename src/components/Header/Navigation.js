@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ReactComponent as HamburgerIcon } from "../../models/images/icon-hamburger-menu.svg";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navigation.css";
 
 const Navigation = props => (
   <Navbar bg="light" variant="dark" fixed="top" className="shadow navbar-large">
     <h1 className="pt-3 pr-4 menu-btn" onClick={() => props.toggleSidebar()}>
-      <i class="fas fa-bars" />
+      <HmaburgerIcon />
     </h1>
     <Navbar.Brand className="pl-2">
       <Link to="/">
