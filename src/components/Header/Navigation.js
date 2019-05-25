@@ -7,7 +7,7 @@ import "./Navigation.css";
 const Navigation = props => (
   <Navbar bg="light" variant="dark" fixed="top" className="shadow navbar-large">
     <h1 className="pt-3 pr-4 menu-btn" onClick={() => props.toggleSidebar()}>
-      <HmaburgerIcon />
+      <HamburgerIcon />
     </h1>
     <Navbar.Brand className="pl-2">
       <Link to="/">
