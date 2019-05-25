@@ -7,6 +7,11 @@ import Modal from "react-bootstrap/Modal";
 //Data Imports
 import data from "../../../models/data.json";
 
+const style = {
+  padding: "0px 200px 0px 0px",
+  margin: "0 auto"
+};
+
 class SampleModal extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -58,9 +63,17 @@ class SampleModal extends React.Component {
           </a>
         </li>
 
-        <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Body>
-            <h4>Are you sure you want to push changes to:</h4>
+        <Modal
+          show={this.state.show}
+          onHide={this.handleClose}
+          centered
+          size="lg"
+        >
+          <Modal.Header closeButton className="text-center" />
+          <Modal.Title className="text-center">
+            Are you sure you want <br /> to push changes to:
+          </Modal.Title>
+          <Modal.Body style={style}>
             <h5 className="pt-2">Third Party Apps</h5>
             <ul>
               {this.state.thirdParties.map(thirdParty => (
@@ -77,11 +90,16 @@ class SampleModal extends React.Component {
           <Modal.Footer className="mx-auto">
             <Button
               variant="outline-secondary"
+              className="cm-btn-secondary"
               onClick={this.handlePushingChanges}
             >
               Yes
             </Button>
-            <Button variant="outline-secondary" onClick={this.handleClose}>
+            <Button
+              variant="outline-secondary"
+              className="cm-btn-secondary"
+              onClick={this.handleClose}
+            >
               No
             </Button>
           </Modal.Footer>
@@ -91,11 +109,14 @@ class SampleModal extends React.Component {
           show={this.state.pushed}
           onHide={this.handleClose}
           centered
-          size="sm"
+          size="lg"
         >
           <Modal.Body className="text-center">
             <Modal.Title>Pushing Changes</Modal.Title>
-            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="pushing" />
+            <img
+              src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"
+              alt="pushing"
+            />
           </Modal.Body>
         </Modal>
       </div>

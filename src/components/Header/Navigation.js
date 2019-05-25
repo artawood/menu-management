@@ -12,8 +12,8 @@ const Navigation = props => (
       <Link to="/">
         <img
           alt=""
-          src="https://www.itsacheckmate.com/wp-content/uploads/2018/08/itsacheckmate.png"
-          className="d-inline-block align-top"
+          src="https://www.itsacheckmate.com/wp-content/uploads/2019/05/ItsaCheckmateLogo_Horizontal_Color_4.png"
+          className="d-inline-block align-top logo"
         />
       </Link>
     </Navbar.Brand>

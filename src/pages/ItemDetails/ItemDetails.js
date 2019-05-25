@@ -69,6 +69,12 @@ class ItemDetails extends Component {
                     <p className="price text-muted">{this.state.item.price}</p>
                   </div>
                   <div className="pt-2">
+                    <h2 className="item-detail-header">Category</h2>
+                    <p className="price text-muted">
+                      {this.state.item.section}
+                    </p>
+                  </div>
+                  <div className="pt-2">
                     <h4 className="item-detail-header">Description</h4>
                     <p className="item-description">
                       {this.state.item.description}
@@ -90,7 +96,7 @@ class ItemDetails extends Component {
               </Link>
             </Col>
           </Row>
-          <h2>Options</h2>
+          <h2 className="option-text pb-2">Options</h2>
           <Table bordered hover>
             <thead>
               <tr>

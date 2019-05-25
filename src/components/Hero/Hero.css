@@ -20,3 +20,7 @@
 .filter-item:hover {
   color: #04a89b;
 }
+
+.first-nav {
+  padding: 0.5rem 1rem 0.5rem 0rem;
+}

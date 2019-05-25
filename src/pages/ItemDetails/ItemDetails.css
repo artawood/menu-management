@@ -4,7 +4,7 @@
 
 .back-to-dashboard {
   text-decoration: none;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .item-detail-image {
@@ -24,15 +24,19 @@
 }
 
 .item-description {
-  font-size: 1.25rem
+  font-size: 1.25rem;
 }
 
 .edit-btn {
-  height: 45px;	
-  width: 129px;	
-  color: #04A89B;	
-  font-family: Roboto;	
-  font-size: 30px;	
-  font-weight: 500;	
+  height: 45px;
+  width: 129px;
+  color: #04a89b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
   line-height: 35px;
+}
+
+.option-text {
+  font-weight: 700;
 }

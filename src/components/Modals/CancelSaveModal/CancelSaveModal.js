@@ -52,8 +52,12 @@ class CancelSaveModal extends React.Component {
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Body>Are you sure you want to cancel save?</Modal.Body>
-          <Modal.Footer>
+          <Modal.Header closeButton />
+          <Modal.Title className="pb-5">
+            Are you sure you don't want to <br />
+            save changes?
+          </Modal.Title>
+          <Modal.Footer className="mx-auto pt-2">
             <Button variant="outline-secondary" onClick={this.handleCancel}>
               Yes
             </Button>
