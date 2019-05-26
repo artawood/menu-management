@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as EditIcon } from "../../../models/images/icon-edit.svg";
 
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
@@ -7,6 +6,7 @@ import Modal from "react-bootstrap/Modal";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import { CloseButton } from "../../Buttons";
+import { Edit } from "../../Icons";
 
 class EditItemPriceModal extends React.Component {
   constructor(props, context) {
@@ -58,7 +58,7 @@ class EditItemPriceModal extends React.Component {
     return (
       <div className="float-left">
         <span onClick={this.handleShow} className="edit-icon">
-          <EditIcon />
+          <Edit />
         </span>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>

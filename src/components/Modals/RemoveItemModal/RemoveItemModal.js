@@ -1,9 +1,10 @@
 import React from "react";
-import { ReactComponent as DeleteIcon } from "../../../models/images/icon-delete.svg";
+
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { CloseButton } from "../../Buttons";
+import { Trash } from "../../Icons";
 
 class RemoveItemModal extends React.Component {
   constructor(props, context) {
@@ -41,7 +42,7 @@ class RemoveItemModal extends React.Component {
   render() {
     return (
       <div>
-        <DeleteIcon onClick={this.handleShow} />
+        <Trash onClick={this.handleShow} />
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header>
