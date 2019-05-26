@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as HamburgerIcon } from "../../models/images/icon-hamburger-menu.svg";
+import { ReactComponent as HamburgerIcon } from "./images/icon-hamburger-menu.svg";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navigation.css";
 
