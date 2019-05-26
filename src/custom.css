@@ -30,9 +30,8 @@ p {
   color: #000000;
 }
 
-.username {
-  color: #0fa79c;
-  text-decoration: none;
+.bg-gray {
+  background-color: #e8e8e8;
 }
 
 .category-text {
@@ -69,7 +68,6 @@ p {
 
 .modal-content {
   border-radius: 0.6rem;
-  min-width: 600px;
 }
 
 .close {
@@ -94,6 +92,7 @@ p {
 
 .btn {
   min-width: 125px;
+  font-weight: 500;
 }
 
 .btn-primary {

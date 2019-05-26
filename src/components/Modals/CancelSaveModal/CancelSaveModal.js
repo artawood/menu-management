@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { CloseButton } from "../../Buttons";
 
 class CancelSaveModal extends React.Component {
   constructor(props, context) {
@@ -52,10 +53,11 @@ class CancelSaveModal extends React.Component {
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header closeButton />
-          <Modal.Title className="pb-5">
-            Are you sure you don't want to <br />
-            save changes?
+          <Modal.Header>
+            <CloseButton handleClose={this.handleClose} />
+          </Modal.Header>
+          <Modal.Title className="pb-5 px-4 text-center">
+            Are you sure you don't want to save changes?
           </Modal.Title>
           <Modal.Footer className="mx-auto pt-2">
             <Button variant="outline-secondary" onClick={this.handleCancel}>

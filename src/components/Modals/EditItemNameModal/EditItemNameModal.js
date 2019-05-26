@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
+import { CloseButton } from "../../Buttons";
 
 class EditItemNameModal extends React.Component {
   constructor(props, context) {
@@ -46,8 +47,6 @@ class EditItemNameModal extends React.Component {
     });
   }
 
-  confirm;
-
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -62,12 +61,18 @@ class EditItemNameModal extends React.Component {
           <EditIcon />
         </span>
 
-        <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header closeButton>
-            <Modal.Title>Edit Item Name: {this.state.name}</Modal.Title>
+        <Modal
+          show={this.state.show}
+          onHide={this.handleClose}
+          centered
+          size="lg"
+        >
+          <Modal.Header className="bg-gray">
+            <h2 className="pt-3">Edit Item Name: {this.state.name}</h2>
+            <CloseButton handleClose={this.handleClose} />
           </Modal.Header>
-          <Modal.Body>
-            <InputGroup size="lg">
+          <Modal.Body className="pt-5">
+            <InputGroup size="lg" className="pb-3">
               <FormControl
                 value={this.state.name}
                 name="name"
@@ -87,14 +92,13 @@ class EditItemNameModal extends React.Component {
           </Modal.Footer>
         </Modal>
 
-        <Modal show={this.state.showSaved} onHide={this.handleClose}>
-          <Modal.Header closeButton>
+        <Modal show={this.state.showSaved} onHide={this.handleClose} centered>
+          <Modal.Header />
+          <Modal.Body className="text-center">
             <Modal.Title>Sorry!</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
             This is just a prototype. Data cannot be edited at this time.
           </Modal.Body>
-          <Modal.Footer>
+          <Modal.Footer className="mx-auto">
             <Button variant="secondary" onClick={this.gotIt}>
               Got it!
             </Button>

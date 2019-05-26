@@ -42,12 +42,12 @@ class CancelSaveModal extends React.Component {
         </Link>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header className="text-center" closeButton>
-            <Modal.Title>
+          <Modal.Header className="text-center" closeButton />
+          <Modal.Body>
+            <Modal.Title className="text-center px-5">
               Are you sure you want to return to Dashboard without saving?
             </Modal.Title>
-          </Modal.Header>
-          <Modal.Body />
+          </Modal.Body>
           <Modal.Footer className="mx-auto">
             <Button variant="outline-secondary" onClick={this.handleCancel}>
               Yes

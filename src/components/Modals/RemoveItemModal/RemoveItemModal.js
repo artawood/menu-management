@@ -3,6 +3,7 @@ import { ReactComponent as DeleteIcon } from "../../../models/images/icon-delete
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { CloseButton } from "../../Buttons";
 
 class RemoveItemModal extends React.Component {
   constructor(props, context) {
@@ -43,8 +44,10 @@ class RemoveItemModal extends React.Component {
         <DeleteIcon onClick={this.handleShow} />
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header closeButton />
-          <Modal.Title className="pb-5">
+          <Modal.Header>
+            <CloseButton handleClose={this.handleClose} />
+          </Modal.Header>
+          <Modal.Title className="pb-5 text-center">
             Are you sure you want to <br />
             delete {this.props.name} ?
           </Modal.Title>

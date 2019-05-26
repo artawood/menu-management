@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { CloseButton } from "../../Buttons";
 
 class ConfirmSaveModal extends React.Component {
   constructor(props, context) {
@@ -62,7 +63,10 @@ class ConfirmSaveModal extends React.Component {
         </Button>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Body className="text-center">
+          <Modal.Header>
+            <CloseButton handleClose={this.handleClose} />
+          </Modal.Header>
+          <Modal.Body className="text-center px-5 py-2">
             Thank you for trying out this demo! Since this is prototype, data
             cannot be edited and updated at this moment. This was designed and
             developed by <a href="www.itsacheckmate.com">ItsaCheckmate, Inc.</a>{" "}

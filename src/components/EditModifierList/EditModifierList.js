@@ -115,6 +115,7 @@ class EditModifierList extends React.Component {
               <RemoveModifierModal
                 id={this.state.id}
                 name={this.state.name}
+                calories={this.state.calories}
                 removeModifier={this.props.removeModifier}
               />
             </span>
