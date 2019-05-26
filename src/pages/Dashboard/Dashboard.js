@@ -3,8 +3,8 @@ import React from "react";
 // Layout Components
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
+import Sidebar from "../../components/Sidebar";
 import SidebarContent from "../../components/SidebarContent";
-import Sidebar from "react-sidebar";
 import ItemCard from "../../components/ItemCard";
 
 // Bootstrap imports
@@ -205,11 +205,7 @@ class Dashboard extends React.Component {
 
   render() {
     const newTimeStamp = new Date().getTime();
-    const style = {
-      sidebarStyle: {
-        boxShadow: "rgba(0, 0, 0, 0) 0px 0px 0px"
-      }
-    };
+
     return (
       <div className="App">
         <Header toggleSidebar={this.onSetSidebarDocked} />

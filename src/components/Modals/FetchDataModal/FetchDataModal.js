@@ -2,6 +2,7 @@ import React from "react";
 
 //Bootstrap Imports
 import Modal from "react-bootstrap/Modal";
+import { ReactComponent as FetchIcon } from "../../../images/icon-fetch-data.svg";
 
 const style = {
   padding: "50px 0px 0px 0px",
@@ -36,7 +37,7 @@ class FetchDataModal extends React.Component {
         <li className="nav-item" onClick={this.handleShow}>
           <a className="nav-link" href="#">
             <span data-feather="fetch-data">
-              <i class="fas fa-sync" />{" "}
+              <FetchIcon />{" "}
             </span>
             Fetch Data
           </a>

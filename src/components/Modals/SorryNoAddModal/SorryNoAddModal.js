@@ -3,6 +3,7 @@ import React from "react";
 //Bootstrap Imports
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Add } from "../../Icons";
 
 class SorryNoAddModal extends React.Component {
   constructor(props, context) {
@@ -29,7 +30,7 @@ class SorryNoAddModal extends React.Component {
         <li className="nav-item" onClick={this.handleShow}>
           <a className="nav-link" href="#">
             <span data-feather="add-item">
-              <i class="fas fa-plus" />{" "}
+              <Add />{" "}
             </span>
             Add Items
           </a>

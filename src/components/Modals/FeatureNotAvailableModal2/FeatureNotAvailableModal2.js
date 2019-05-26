@@ -4,6 +4,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
+import { LogOut } from "../../Icons";
+
 class FeatureNotAvailable2 extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -29,7 +31,7 @@ class FeatureNotAvailable2 extends React.Component {
         <li className="nav-item" onClick={this.handleShow}>
           <a className="nav-link" href="#">
             <span data-feather="file-text">
-              <i class="fas fa-sign-out-alt" />{" "}
+              <LogOut />{" "}
             </span>
             Log Out
           </a>

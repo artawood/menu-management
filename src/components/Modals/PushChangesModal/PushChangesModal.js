@@ -4,6 +4,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
+import { Push } from "../../Icons";
+
 //Data Imports
 import data from "../../../models/data.json";
 
@@ -13,10 +15,10 @@ const style = {
     margin: "0 auto"
   },
   modalContent: {
-    width: 400
+    maxWidth: 400
   },
   modalTitle: {
-    paddingLeft: 120
+    paddingLeft: 70
   }
 };
 
@@ -65,7 +67,7 @@ class SampleModal extends React.Component {
         <li className="nav-item" onClick={this.handleShow}>
           <a className="nav-link" href="#">
             <span data-feather="push-changes">
-              <i class="fas fa-location-arrow" />{" "}
+              <Push />{" "}
             </span>
             Push Changes
           </a>
@@ -108,12 +110,7 @@ class SampleModal extends React.Component {
           </Modal.Footer>
         </Modal>
 
-        <Modal
-          show={this.state.pushed}
-          onHide={this.handleClose}
-          centered
-          size="lg"
-        >
+        <Modal show={this.state.pushed} onHide={this.handleClose} centered>
           <Modal.Body className="text-center">
             <Modal.Title>Pushing Changes</Modal.Title>
             <img

@@ -27,6 +27,7 @@ class EditItemDetails extends Component {
     modifiers: [],
     EditItemName: "",
     EditItemPrice: "",
+    EditItemCategory: "",
     EditItemDescription: "",
     id: ""
   };
@@ -43,6 +44,7 @@ class EditItemDetails extends Component {
       modifiers: data.menu.item[id].modifier,
       EditItemName: data.menu.item[id].name,
       EditItemPrice: data.menu.item[id].price,
+      EditItemCategory: data.menu.item[id].section,
       EditItemDescription: data.menu.item[id].description,
       id: data.menu.item[id].id
     });
@@ -101,18 +103,37 @@ class EditItemDetails extends Component {
                       aria-label="itemName"
                     />
                   </InputGroup>
-                  <div className="pt-2">
-                    <h2 className="item-detail-header">Price</h2>
-                    <InputGroup size="lg">
-                      <FormControl
-                        value={this.state.EditItemPrice}
-                        name="EditItemPrice"
-                        onChange={this.handleInputChange}
-                        placeholder="item price"
-                        aria-label="itemPrice"
-                      />
-                    </InputGroup>
-                  </div>
+                  <Row>
+                    <Col xs="6">
+                      <div className="pt-2">
+                        <h2 className="item-detail-header">Price</h2>
+                        <InputGroup size="lg">
+                          <FormControl
+                            value={this.state.EditItemPrice}
+                            name="EditItemPrice"
+                            onChange={this.handleInputChange}
+                            placeholder="item price"
+                            aria-label="itemPrice"
+                          />
+                        </InputGroup>
+                      </div>
+                    </Col>
+                    <Col xs="6">
+                      <div className="pt-2">
+                        <h2 className="item-detail-header">Category</h2>
+                        <InputGroup size="lg">
+                          <FormControl
+                            value={this.state.EditItemCategory}
+                            name="EditItemCategory"
+                            onChange={this.handleInputChange}
+                            placeholder="item category"
+                            aria-label="itemCategory"
+                          />
+                        </InputGroup>
+                      </div>
+                    </Col>
+                  </Row>
+
                   <div className="pt-2">
                     <h4 className="item-detail-header">Description</h4>
                     <InputGroup size="lg">
@@ -132,7 +153,7 @@ class EditItemDetails extends Component {
             {/* Edit Button */}
             <Col md="4" />
           </Row>
-          <h2>Options</h2>
+          <h2 className="option-text pt-5 pb-2">Options</h2>
           <Table bordered hover>
             <thead>
               <tr>

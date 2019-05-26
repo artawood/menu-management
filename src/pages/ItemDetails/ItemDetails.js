@@ -63,17 +63,25 @@ class ItemDetails extends Component {
                   />
                 </Col>
                 <Col md="8" className="pl-5">
-                  <h1 className="item-name">{this.state.item.name}</h1>
-                  <div className="pt-2">
-                    <h2 className="item-detail-header">Price</h2>
-                    <p className="price text-muted">{this.state.item.price}</p>
-                  </div>
-                  <div className="pt-2">
-                    <h2 className="item-detail-header">Category</h2>
-                    <p className="price text-muted">
-                      {this.state.item.section}
-                    </p>
-                  </div>
+                  <h1 className="item-name pb-3">{this.state.item.name}</h1>
+                  <Row>
+                    <Col xs="6">
+                      <div className="pt-2">
+                        <h2 className="item-detail-header">Price</h2>
+                        <p className="price text-muted">
+                          {this.state.item.price}
+                        </p>
+                      </div>
+                    </Col>
+                    <Col xs="6">
+                      <div className="pt-2">
+                        <h2 className="item-detail-header">Category</h2>
+                        <p className="price text-muted">
+                          {this.state.item.section}
+                        </p>
+                      </div>
+                    </Col>
+                  </Row>
                   <div className="pt-2">
                     <h4 className="item-detail-header">Description</h4>
                     <p className="item-description">
@@ -96,7 +104,7 @@ class ItemDetails extends Component {
               </Link>
             </Col>
           </Row>
-          <h2 className="option-text pb-2">Options</h2>
+          <h2 className="option-text pt-5 pb-2">Options</h2>
           <Table bordered hover>
             <thead>
               <tr>
