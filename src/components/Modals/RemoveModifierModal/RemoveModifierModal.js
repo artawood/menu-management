@@ -42,7 +42,9 @@ class RemoveItemModal extends React.Component {
   render() {
     return (
       <div>
-        <Trash onClick={this.handleShow} />
+        <span className="text-muted" onClick={this.handleShow}>
+          <Trash />
+        </span>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header>

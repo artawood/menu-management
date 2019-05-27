@@ -60,8 +60,8 @@ const SidebarContent = props => {
       <nav class="d-none d-md-block sidebar">
         <div className="sidebar-sticky">
           <ul className="nav flex-column option">
-            <li className="nav-item">
-              <a className="nav-link active">
+            <li className="nav-item hover currentPage">
+              <a className="nav-link active ml-5">
                 <span data-feather="home">
                   <Home className="isActive" />{" "}
                 </span>
@@ -75,7 +75,7 @@ const SidebarContent = props => {
             <SorryNoAddModal />
           </ul>
           <div class="dropdown-divider" />
-          <ul className="nav flex-column mb-2 other-option">
+          <ul className="nav flex-column mb-2">
             {/* <FeatureNotAvailableModal /> */}
             <FeatureNotAvailableModal2 />
           </ul>

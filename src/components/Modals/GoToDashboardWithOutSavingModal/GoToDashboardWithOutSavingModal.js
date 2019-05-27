@@ -37,8 +37,8 @@ class CancelSaveModal extends React.Component {
     }
     return (
       <div>
-        <Link className="back-to-dashboard" onClick={this.handleShow}>
-          <h4>&lt; Back to Dashboard</h4>
+        <Link className="back-to-dashboard-link" onClick={this.handleShow}>
+          <h4 className="back-to-dashboard">&lt; Back to Dashboard</h4>
         </Link>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>

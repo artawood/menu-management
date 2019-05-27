@@ -39,8 +39,8 @@ class ItemDetails extends Component {
           {/* Navigation and Timestamp */}
           <Row className="pb-4">
             <Col md="8">
-              <Link className="back-to-dashboard" to="/">
-                <h4>&lt; Back to Dashboard</h4>
+              <Link className="back-to-dashboard-link" to="/">
+                <h4 className="back-to-dashboard">&lt; Back to Dashboard</h4>
               </Link>
             </Col>
             <Col md="4">

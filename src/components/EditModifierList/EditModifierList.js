@@ -110,7 +110,7 @@ class EditModifierList extends React.Component {
         )} */}
             <ToggleSwitch />
           </td>
-          <td className="text-muted text-center">
+          <td className="text-center">
             <span>
               <RemoveModifierModal
                 id={this.state.id}

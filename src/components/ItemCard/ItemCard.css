@@ -67,8 +67,9 @@
   font-size: 18px;
 }
 
-.isSoldOut {
-  color: #04a89b;
+.notSoldOut {
+  font-weight: 500;
+  color: #909090;
 }
 
 .see-details {

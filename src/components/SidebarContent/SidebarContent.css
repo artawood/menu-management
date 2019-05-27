@@ -28,6 +28,7 @@
 
 .currentPage {
   color: #6f6d6d;
+  background-color: #e3e3e3;
 }
 
 .sidebar .nav-link:hover .feather,
@@ -42,9 +43,13 @@
 
 /* Add padding left and right */
 .option {
-  padding: 30px 45px 10px;
+  padding: 30px 0px 10px;
 }
 
 .other-option {
   padding: 20px 45px;
+}
+
+.hover:hover {
+  background-color: #e3e3e3;
 }

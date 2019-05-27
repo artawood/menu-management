@@ -28,8 +28,8 @@ class FeatureNotAvailable2 extends React.Component {
   render() {
     return (
       <div>
-        <li className="nav-item" onClick={this.handleShow}>
-          <a className="nav-link" href="#">
+        <li className="nav-item hover" onClick={this.handleShow}>
+          <a className="nav-link ml-5" href="#">
             <span data-feather="file-text">
               <LogOut />{" "}
             </span>
