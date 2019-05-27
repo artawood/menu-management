@@ -62,7 +62,10 @@ class ItemCard extends React.Component {
             <Col xs={this.state.image ? "6" : "12"}>
               <Row className="pl-3 pt-1 pb-1">
                 <div className="item-price-card pr-2">$ {this.state.price}</div>
-                <EditItemPriceModal price={this.state.price} />
+                <EditItemPriceModal
+                  name={this.state.name}
+                  price={this.state.price}
+                />
               </Row>
               <Card.Text className="mt-3">
                 {/* {props.soldOut ?

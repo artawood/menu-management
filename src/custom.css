@@ -54,6 +54,10 @@ p {
   width: 700px;
 } */
 
+.modal-dialog {
+  max-width: 600px;
+}
+
 .modal-header {
   padding: 0px 1.5rem;
   border-bottom: 0px solid #dee2e6;
@@ -61,7 +65,7 @@ p {
 
 .modal-title {
   color: #4a4a4a;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 400;
   padding: 20px 0px 20px;
 }
@@ -93,6 +97,8 @@ p {
 .btn {
   min-width: 125px;
   font-weight: 500;
+  font-size: 24px;
+  border: 2px solid;
 }
 
 .btn-primary {
@@ -104,9 +110,14 @@ p {
   background-color: #4a4a4a;
 }
 
-.outline-secondary {
-  font-size: 24px;
+.btn-outline-secondary {
   color: #4a4a4a;
+  border-color: #4a4a4a;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #0fa79c;
+  border-color: #0fa79c;
 }
 
 /* custom table */
@@ -115,8 +126,27 @@ th {
   color: #4a4a4a;
 }
 
-/* svg images */
+/* custom form */
 
-.edit-icon-btn {
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='22px' height='22px' viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='icon-edit'%3E%3C!-- Generator: Sketch 53 (72520) - https://sketchapp.com --%3E%3Ctitle%3Eicon-edit%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Cpolygon id='path-1' points='0 0 18 0 18 18 0 18'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='icon-edit' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(2.000000, 2.000000)'%3E%3Cmask id='mask-2' fill='white'%3E%3Cuse xlink:href='%23path-1'%3E%3C/use%3E%3C/mask%3E%3Cg id='Clip-2'%3E%3C/g%3E%3Cpath d='M0.0100557966,17.4906748 C-0.0398972626,17.7158223 0.101066165,17.9389167 0.326197075,17.9895577 C0.388467327,18.0039288 0.452106156,18.0032445 0.514376408,17.9888734 L4.59478863,16.9945293 L0.935213825,13.3148403 L0.0100557966,17.4906748 Z M17.6325371,2.11632234 L15.9998248,0.475962553 C15.3702794,-0.156366375 14.3479524,-0.15910373 13.7156698,0.470487844 L13.7101955,0.475962553 L12.1465963,2.04788847 L15.808224,5.72757749 L17.6325371,3.89354986 C18.1224876,3.40219469 18.1224876,2.6076775 17.6325371,2.11632234 L17.6325371,2.11632234 Z M11.1926982,3.00390959 L14.8543258,6.6835986 L5.58563835,15.9967635 L1.92674784,12.3184432 L11.1926982,3.00390959 Z' id='Fill-1' fill='%239B9898' mask='url(%23mask-2)'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.input-group-lg > .custom-select,
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-append > .btn,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-prepend > .input-group-text,
+select,
+option,
+.form-control {
+  border-radius: 0px !important;
+  -webkit-appearance: none;
+}
+
+select:not([multiple]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+  padding: 0.5em;
+  padding-right: 1.5em;
 }

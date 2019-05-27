@@ -8,6 +8,26 @@ import FormControl from "react-bootstrap/FormControl";
 import { CloseButton } from "../../Buttons";
 import { Edit } from "../../Icons";
 
+const style = {
+  itemName: {
+    fontStyle: "italic",
+    fontWeight: 400
+  },
+  modalBody: {
+    paddingLeft: 25,
+    paddingRight: 25
+  },
+  formControl: {
+    fontSize: "1.5rem",
+    borderRadius: 0
+  },
+  modalFooter: {
+    paddingBottom: 30,
+    paddingLeft: 25,
+    paddingRight: 25
+  }
+};
+
 class EditItemNameModal extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -61,17 +81,15 @@ class EditItemNameModal extends React.Component {
           <Edit />
         </span>
 
-        <Modal
-          show={this.state.show}
-          onHide={this.handleClose}
-          centered
-          size="lg"
-        >
+        <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header className="bg-gray">
-            <h2 className="pt-3">Edit Item Name: {this.state.name}</h2>
+            <h2 className="pt-3">
+              Edit Item Name:{" "}
+              <span style={style.itemName}>{this.state.name}</span>
+            </h2>
             <CloseButton handleClose={this.handleClose} />
           </Modal.Header>
-          <Modal.Body className="pt-5">
+          <Modal.Body className="pt-5" style={style.modalBody}>
             <InputGroup size="lg" className="pb-3">
               <FormControl
                 value={this.state.name}
@@ -79,15 +97,13 @@ class EditItemNameModal extends React.Component {
                 onChange={this.handleInputChange}
                 placeholder="edit name"
                 aria-label="name"
+                style={style.formControl}
               />
             </InputGroup>
           </Modal.Body>
-          <Modal.Footer className="mx-auto">
-            <Button variant="secondary" onClick={this.handleClose}>
-              Cancel
-            </Button>
+          <Modal.Footer style={style.modalFooter}>
             <Button variant="primary" onClick={this.showSaved}>
-              Save Changes
+              Save
             </Button>
           </Modal.Footer>
         </Modal>

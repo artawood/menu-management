@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Navigation.css";
 
 const Navigation = props => (
-  <Navbar bg="light" variant="dark" fixed="top" className="shadow navbar-large">
+  <Navbar bg="white" variant="dark" fixed="top" className="shadow navbar-large">
     <h1 className="pt-3 pr-4 menu-btn" onClick={() => props.toggleSidebar()}>
       <HamburgerIcon />
     </h1>

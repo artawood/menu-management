@@ -57,7 +57,8 @@ class CancelSaveModal extends React.Component {
             <CloseButton handleClose={this.handleClose} />
           </Modal.Header>
           <Modal.Title className="pb-5 px-4 text-center">
-            Are you sure you don't want to save changes?
+            Are you sure you don't want
+            <br /> to save changes?
           </Modal.Title>
           <Modal.Footer className="mx-auto pt-2">
             <Button variant="outline-secondary" onClick={this.handleCancel}>

@@ -6,6 +6,15 @@ import Modal from "react-bootstrap/Modal";
 import { CloseButton } from "../../Buttons";
 import { Trash } from "../../Icons";
 
+const style = {
+  trash: {
+    cursor: "pointer"
+  },
+  modalTitle: {
+    padding: "0 0 3rem 0"
+  }
+};
+
 class RemoveItemModal extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -42,13 +51,19 @@ class RemoveItemModal extends React.Component {
   render() {
     return (
       <div>
-        <Trash onClick={this.handleShow} />
+        <div
+          style={style.trash}
+          className="trash-active"
+          onClick={this.handleShow}
+        >
+          <Trash />
+        </div>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
           <Modal.Header>
             <CloseButton handleClose={this.handleClose} />
           </Modal.Header>
-          <Modal.Title className="pb-5 text-center">
+          <Modal.Title style={style.modalTitle} className="text-center">
             Are you sure you want to <br />
             delete {this.props.name} ?
           </Modal.Title>
