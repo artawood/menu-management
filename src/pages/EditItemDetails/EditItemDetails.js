@@ -95,6 +95,7 @@ class EditItemDetails extends Component {
                   />
                 </Col>
                 <Col md="9" className="pl-5">
+                  <h2 className="item-detail-header">Item Name</h2>
                   <InputGroup size="lg">
                     <FormControl
                       value={this.state.EditItemName}
@@ -104,7 +105,7 @@ class EditItemDetails extends Component {
                       aria-label="itemName"
                     />
                   </InputGroup>
-                  <Row>
+                  <Row className="pt-4">
                     <Col xs="6">
                       <div className="pt-2">
                         <h2 className="item-detail-header">Price</h2>
@@ -141,7 +142,7 @@ class EditItemDetails extends Component {
                     </Col>
                   </Row>
 
-                  <div className="pt-2">
+                  <div className="pt-4">
                     <h4 className="item-detail-header">Description</h4>
                     <InputGroup size="lg">
                       <FormControl

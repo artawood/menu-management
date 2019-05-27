@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 //Components
-import SoldOutSwitch from "../ToggleSwitch";
+import SoldOutSwitch from "../ToggleSoldOut";
 import EditItemNameModal from "../Modals/EditItemNameModal";
 import EditItemPriceModal from "../Modals/EditItemPriceModal";
 import RemoveItemModal from "../Modals/RemoveItemModal";
@@ -79,7 +79,6 @@ class ItemCard extends React.Component {
                 </p>} */}
                 <div className="d-flex">
                   <SoldOutSwitch className="pr-2" />
-                  <span>Sold Out</span>
                 </div>
               </Card.Text>
             </Col>

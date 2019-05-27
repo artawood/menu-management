@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 import { Push } from "../../Icons";
+import { CloseButton } from "../../Buttons";
 
 //Data Imports
 import data from "../../../models/data.json";
@@ -64,8 +65,8 @@ class SampleModal extends React.Component {
   render() {
     return (
       <div>
-        <li className="nav-item" onClick={this.handleShow}>
-          <a className="nav-link" href="#">
+        <li className="nav-item hover" onClick={this.handleShow}>
+          <a className="nav-link ml-5" href="#">
             <span data-feather="push-changes">
               <Push />{" "}
             </span>
@@ -74,10 +75,13 @@ class SampleModal extends React.Component {
         </li>
 
         <Modal show={this.state.show} onHide={this.handleClose} centered>
-          <Modal.Header closeButton className="" />
+          <Modal.Header className="">
+            <CloseButton handleClose={this.handleClose} />
+          </Modal.Header>
           <Modal.Title style={style.modalTitle}>
             Are you sure you want <br /> to push changes to:
           </Modal.Title>
+
           <Modal.Body style={style.modalBody}>
             <h4 className="pt-2">Third Party Apps</h4>
             <ul>

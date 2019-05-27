@@ -14,7 +14,9 @@ const ModifierList = props => (
         {props.soldOut ? (
           <i class="fas fa-check" />
         ) : (
-          <i class="far fa-square" />
+          <span className="text-muted">
+            <i class="far fa-square" />
+          </span>
         )}
       </td>
     </tr>

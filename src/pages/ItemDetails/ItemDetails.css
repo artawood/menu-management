@@ -2,9 +2,21 @@
   margin-top: 175px;
 }
 
-.back-to-dashboard {
+.back-to-dashboard-link {
   text-decoration: none;
+}
+.back-to-dashboard-link:hover {
+  text-decoration: none;
+}
+
+.back-to-dashboard {
   color: #4a4a4a;
+  text-decoration: none;
+}
+
+.back-to-dashboard:hover {
+  color: #04a89b;
+  text-decoration: none;
 }
 
 .item-detail-image {
