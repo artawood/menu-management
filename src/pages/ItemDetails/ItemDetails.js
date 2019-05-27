@@ -48,10 +48,10 @@ class ItemDetails extends Component {
             </Col>
           </Row>
           {/* Item Image and details */}
-          <Row>
-            <Col md="8">
+          <Row className="pt-4">
+            <Col md="10">
               <Row>
-                <Col md="4">
+                <Col md="3">
                   <img
                     className="item-detail-image"
                     src={
@@ -62,26 +62,32 @@ class ItemDetails extends Component {
                     alt={this.state.item.name}
                   />
                 </Col>
-                <Col md="8" className="pl-5">
+                <Col md="9" className="pl-5">
                   <h1 className="item-name pb-3">{this.state.item.name}</h1>
                   <Row>
                     <Col xs="6">
-                      <div className="pt-2">
-                        <h2 className="item-detail-header">Price</h2>
-                        <p className="price text-muted">
-                          {this.state.item.price}
-                        </p>
-                      </div>
+                      <Row>
+                        <Col xs="6">
+                          <div className="pt-2">
+                            <h2 className="item-detail-header">Price</h2>
+                            <p className="price text-muted">
+                              {this.state.item.price}
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xs="6">
+                          <div className="pt-2">
+                            <h2 className="item-detail-header">Category</h2>
+                            <p className="price text-muted">
+                              {this.state.item.section}
+                            </p>
+                          </div>
+                        </Col>
+                      </Row>
                     </Col>
-                    <Col xs="6">
-                      <div className="pt-2">
-                        <h2 className="item-detail-header">Category</h2>
-                        <p className="price text-muted">
-                          {this.state.item.section}
-                        </p>
-                      </div>
-                    </Col>
+                    <Col xs="6" />
                   </Row>
+
                   <div className="pt-2">
                     <h4 className="item-detail-header">Description</h4>
                     <p className="item-description">
@@ -92,7 +98,7 @@ class ItemDetails extends Component {
               </Row>
             </Col>
             {/* Edit Button */}
-            <Col md="4">
+            <Col md="2">
               {/* <SorryNoEditModal /> */}
               <Link to={"/edit/itemdetails/" + this.state.item.id}>
                 <Button

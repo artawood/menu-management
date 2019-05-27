@@ -8,7 +8,7 @@
 }
 
 .item-detail-image {
-  width: 100%;
+  width: 90%;
 }
 
 .item-name {
@@ -35,7 +35,8 @@
   font-family: Roboto;
   font-size: 30px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 30px;
+  border: 2px solid #979797;
 }
 
 .option-text {

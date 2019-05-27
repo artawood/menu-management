@@ -11,14 +11,14 @@ import data from "../../../models/data.json";
 
 const style = {
   modalBody: {
-    padding: "0px 200px 0px 0px",
-    margin: "0 auto"
-  },
-  modalContent: {
-    maxWidth: 400
+    paddingLeft: 100
   },
   modalTitle: {
-    paddingLeft: 70
+    padding: "0 0 0 100px",
+    fontWeight: 500
+  },
+  li: {
+    fontSize: 24
   }
 };
 
@@ -79,16 +79,16 @@ class SampleModal extends React.Component {
             Are you sure you want <br /> to push changes to:
           </Modal.Title>
           <Modal.Body style={style.modalBody}>
-            <h5 className="pt-2">Third Party Apps</h5>
+            <h4 className="pt-2">Third Party Apps</h4>
             <ul>
               {this.state.thirdParties.map(thirdParty => (
-                <li>{thirdParty}</li>
+                <li style={style.li}>{thirdParty}</li>
               ))}
             </ul>
-            <h5>POS</h5>
+            <h4>POS</h4>
             <ul>
               {this.state.pos.map(system => (
-                <li>{system}</li>
+                <li style={style.li}>{system}</li>
               ))}
             </ul>
           </Modal.Body>

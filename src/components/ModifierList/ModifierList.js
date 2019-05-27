@@ -11,7 +11,11 @@ const ModifierList = props => (
       <td className="text-center">{props.groupMin}</td>
       <td className="text-center">{props.groupMax}</td>
       <td className="text-center">
-        {props.soldOut ? <i class="fas fa-check" /> : ""}
+        {props.soldOut ? (
+          <i class="fas fa-check" />
+        ) : (
+          <i class="far fa-square" />
+        )}
       </td>
     </tr>
   </tbody>

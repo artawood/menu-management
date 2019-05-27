@@ -29,7 +29,8 @@ class EditItemDetails extends Component {
     EditItemPrice: "",
     EditItemCategory: "",
     EditItemDescription: "",
-    id: ""
+    id: "",
+    sectionList: data.menu.section
   };
 
   componentDidMount() {
@@ -79,21 +80,21 @@ class EditItemDetails extends Component {
             </Col>
           </Row>
           {/* Item Image and details */}
-          <Row>
-            <Col md="8">
+          <Row className="pt-4">
+            <Col md="10">
               <Row>
-                <Col md="4">
+                <Col md="3">
                   <img
                     className="item-detail-image"
                     src={
                       this.state.item.imgURL
                         ? this.state.item.imgURL
-                        : "https://imbindonesia.com/images/placeholder/camera.jpg"
+                        : "icon-camera.svg"
                     }
                     alt={this.state.item.name}
                   />
                 </Col>
-                <Col md="8" className="pl-5">
+                <Col md="9" className="pl-5">
                   <InputGroup size="lg">
                     <FormControl
                       value={this.state.EditItemName}
@@ -123,12 +124,18 @@ class EditItemDetails extends Component {
                         <h2 className="item-detail-header">Category</h2>
                         <InputGroup size="lg">
                           <FormControl
+                            as="select"
                             value={this.state.EditItemCategory}
                             name="EditItemCategory"
                             onChange={this.handleInputChange}
                             placeholder="item category"
                             aria-label="itemCategory"
-                          />
+                          >
+                            <option>{this.state.EditItemCategory}</option>
+                            {this.state.sectionList.map(section => (
+                              <option>{section}</option>
+                            ))}
+                          </FormControl>
                         </InputGroup>
                       </div>
                     </Col>
@@ -151,7 +158,7 @@ class EditItemDetails extends Component {
               </Row>
             </Col>
             {/* Edit Button */}
-            <Col md="4" />
+            <Col md="2" />
           </Row>
           <h2 className="option-text pt-5 pb-2">Options</h2>
           <Table bordered hover>
