@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import "./EditItemDetails.css";
-
-//Bootstrap Components
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import ButtonToolbar from "react-bootstrap/ButtonToolbar";
-import Table from "react-bootstrap/Table";
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-
+import {
+  Container,
+  Row,
+  Col,
+  ButtonToolbar,
+  Table,
+  InputGroup,
+  FormControl
+} from "react-bootstrap";
 //Component
 import EditModifierList from "../../components/EditModifierList";
 import CancelSaveModal from "../../components/Modals/CancelSaveModal";
 import ConfirmSaveModal from "../../components/Modals/ConfirmSaveModal";
 import GoToDashboardWithOutSavingModal from "../../components/Modals/GoToDashboardWithOutSavingModal";
 import SorryNoAddOptionModal from "../../components/Modals/SorryNoAddOptionModal";
+
+import "./EditItemDetails.css";
 
 //dummy data
 import data from "../../models/data.json";

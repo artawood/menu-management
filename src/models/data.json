@@ -1,4 +1,12 @@
 {
+  "location": [
+    { "name": "Five Guys - AL0193", "value": "AL0193" },
+    { "name": "Five Guys - AL0230", "value": "AL0230" },
+    { "name": "Five Guys - AL0048", "value": "AL0048" },
+    { "name": "Five Guys - AL0068", "value": "AL0068" },
+    { "name": "Five Guys - AL0434", "value": "AL0434" },
+    { "name": "Other Customer", "value": "Other" }
+  ],
   "menu": {
     "section": ["Burgers", "Dogs", "Sandwiches", "Fries", "Drinks"],
     "modifiers": [

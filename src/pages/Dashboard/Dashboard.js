@@ -1,16 +1,10 @@
 import React from "react";
-
-// Layout Components
+import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import Sidebar from "../../components/Sidebar";
 import SidebarContent from "../../components/SidebarContent";
 import ItemCard from "../../components/ItemCard";
-
-// Bootstrap imports
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 // Data
 import data from "../../models/data.json";
@@ -52,6 +46,14 @@ class Dashboard extends React.Component {
       });
     }
   }
+
+  // Uncomment this if testing with API
+  // componentDidMount() {
+  //   fetch('/api/menu')
+  //     .then(response => response.json())
+  //     .then(json => this.setState({menu: json}))
+  //     .catch(error => console.log(error))
+  // }
 
   componentDidMount() {
     this.loadData();
