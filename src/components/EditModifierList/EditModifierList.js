@@ -1,11 +1,6 @@
 import React from "react";
 import ToggleSwitch from "../ToggleSwitch";
-
-//Bootstrap Components
-import InputGroup from "react-bootstrap/InputGroup";
-import FormControl from "react-bootstrap/FormControl";
-
-//Components
+import { InputGroup, FormControl } from "react-bootstrap";
 import RemoveModifierModal from "../Modals/RemoveModifierModal";
 
 //dummy data

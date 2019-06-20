@@ -1,9 +1,7 @@
 import React from "react";
 import Moment from "react-moment";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Nav from "react-bootstrap/Nav";
+import { Row, Col, Jumbotron, Nav } from "react-bootstrap";
+import LocationSelector from "../LocationSelector";
 import "./Hero.css";
 
 const Hero = props => (
@@ -19,7 +17,7 @@ const Hero = props => (
         </p>
       </Col>
     </Row>
-    <h2 class="mb-5">Five Guys - AL0193</h2>
+    <LocationSelector class="py-5" />
     <div class="dropdown-divider" />
     <Nav
       activeKey="all"

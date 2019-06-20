@@ -1,12 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-// Bootstrap
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-//Components
+import { Card, Row, Col } from "react-bootstrap";
 import SoldOutSwitch from "../ToggleSoldOut";
 import EditItemNameModal from "../Modals/EditItemNameModal";
 import EditItemPriceModal from "../Modals/EditItemPriceModal";

@@ -1,18 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./ItemDetails.css";
-//Layout
+import { Container, Row, Col, Button, Table } from "react-bootstrap";
 import Header from "../../components/Header";
-
-//Bootstrap Components
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Table from "react-bootstrap/Table";
-
-//Component
 import ModifierList from "../../components/ModifierList";
+import "./ItemDetails.css";
 
 //dummy data
 import data from "../../models/data.json";
