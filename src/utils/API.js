@@ -9,11 +9,11 @@ export default {
     return axios.get("/api/itemdetails");
   },
   // Gets the item with the given id
-  getBook: function(id) {
+  getMenu: function(id) {
     return axios.get("/api/itemdetails/" + id);
   },
   // Deletes the item  with the given id
-  deleteBook: function(id) {
+  deleteItem: function(id) {
     return axios.delete("/api/itemdetails/" + id);
   }
 };
