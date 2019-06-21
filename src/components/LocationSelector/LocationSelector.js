@@ -1,22 +1,26 @@
 import React from "react";
-import SelectSearch from "react-select-search";
+import { Dropdown } from "semantic-ui-react";
 import "./LocationSelector.css";
 
 import data from "../../models/data.json";
 
 class LocationSelector extends React.Component {
-  state = {
-    location: "AL0193"
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "AL0193"
+    };
+  }
   render() {
     return (
-      <SelectSearch
-        name="location"
-        mode="input"
-        value={this.state.location}
+      <Dropdown
+        search
+        selection
+        defaultValue={this.state.value}
         options={data.location}
         placeholder="Select Location"
+        name="Location"
+        tabIndex="0"
       />
     );
   }

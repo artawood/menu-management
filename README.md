@@ -25,9 +25,14 @@ npm install
 
 ### !important
 
-Please be sure to include the following in the head tag:
+Please be sure to include the following in the head tag in this order:
 
 ```
+<!-- Semantic UI -->
+<link
+  rel="stylesheet"
+  href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+/>
 <!-- Bootstrap -->
 <link
   rel="stylesheet"
@@ -35,12 +40,18 @@ Please be sure to include the following in the head tag:
   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
   crossorigin="anonymous"
 />
-
 <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
 <!-- Google Font Roboto -->
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900"
+  rel="stylesheet"
+/>
 
 ```
 

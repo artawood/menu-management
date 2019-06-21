@@ -7,7 +7,7 @@ import "./Hero.css";
 const Hero = props => (
   <Jumbotron className="hero-clear pb-3">
     <Row>
-      <Col md="8">
+      <Col md="8" className="pb-3">
         <h1>Menu Management</h1>
       </Col>
       <Col md="4">
@@ -18,7 +18,7 @@ const Hero = props => (
       </Col>
     </Row>
     <LocationSelector class="py-5" />
-    <div class="dropdown-divider" />
+    <div class="dropdown-divider py-3" />
     <Nav
       activeKey="all"
       onSelect={selectedKey => alert(`filter ${selectedKey}`)}

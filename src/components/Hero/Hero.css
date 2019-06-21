@@ -24,3 +24,7 @@
 .first-nav {
   padding: 0.5rem 1rem 0.5rem 0rem;
 }
+
+.dropdown-divider {
+  margin: 2rem 0 0.5rem;
+}
