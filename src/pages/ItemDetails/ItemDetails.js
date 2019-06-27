@@ -6,11 +6,11 @@ import ModifierList from "../../components/ModifierList";
 import "./ItemDetails.css";
 
 //dummy data
-import data from "../../models/data2.json";
+import data from "../../models/data.json";
 
 class ItemDetails extends Component {
   state = {
-    item: ""
+    item: data.menu.item[0]
   };
 
   componentDidMount() {
@@ -45,7 +45,11 @@ class ItemDetails extends Component {
                 <Col md="3">
                   <img
                     className="item-detail-image"
-                    src="https://imbindonesia.com/images/placeholder/camera.jpg"
+                    src={
+                      this.state.item.imgURL
+                        ? this.state.item.imgURL
+                        : "https://imbindonesia.com/images/placeholder/camera.jpg"
+                    }
                     alt={this.state.item.name}
                   />
                 </Col>
