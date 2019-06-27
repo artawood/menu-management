@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Row, Col } from "react-bootstrap";
 import SoldOutSwitch from "../ToggleSoldOut";
-import EditItemNameModal from "../Modals/EditItemNameModal";
-import EditItemPriceModal from "../Modals/EditItemPriceModal";
-import RemoveItemModal from "../Modals/RemoveItemModal";
+//Uncomment if using thes features
+// import EditItemNameModal from "../Modals/EditItemNameModal";
+// import EditItemPriceModal from "../Modals/EditItemPriceModal";
+// import RemoveItemModal from "../Modals/RemoveItemModal";
 
 //Custom CSS
 import "./ItemCard.css";
@@ -50,16 +51,11 @@ class ItemCard extends React.Component {
         <Card.Body>
           <Row className="pl-3 pb-1">
             <div className="item-name-card pr-2">{this.state.name}</div>
-            <EditItemNameModal className="pt-1" name={this.state.name} />
           </Row>
           <Row>
             <Col xs={this.state.image ? "6" : "12"}>
               <Row className="pl-3 pt-1 pb-1">
                 <div className="item-price-card pr-2">$ {this.state.price}</div>
-                <EditItemPriceModal
-                  name={this.state.name}
-                  price={this.state.price}
-                />
               </Row>
               <Card.Text className="mt-3">
                 {/* {props.soldOut ?
@@ -99,26 +95,7 @@ class ItemCard extends React.Component {
                 See Details
               </Link>
             </Col>
-            <Col xs="7">
-              {/* <span
-                onClick={() => {
-                  if (
-                    window.confirm(
-                      "Are you sure you want to delete " + this.state.name + "?"
-                    )
-                  )
-                    this.props.removeItem(this.state.id, this.state.name);
-                }}
-                className="text-muted delete-icon"
-              >
-                <DeleteIcon /> */}
-              <RemoveItemModal
-                id={this.state.id}
-                name={this.state.name}
-                removeItem={this.props.removeItem}
-              />
-              {/* </span> */}
-            </Col>
+            <Col xs="7" />
           </Row>
         </Card.Footer>
       </Card>
