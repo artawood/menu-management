@@ -15,7 +15,6 @@ class ItemCard extends React.Component {
     this.state = {
       id: props.id,
       key: props.id,
-      title: props.title,
       name: props.name,
       price: props.price,
       section: props.section,
@@ -95,7 +94,7 @@ class ItemCard extends React.Component {
             <Col xs="5">
               <Link
                 className="see-details"
-                to={"/itemdetails/" + this.state.title + "/" + this.state.id}
+                to={"/itemdetails/" + this.state.id}
               >
                 See Details
               </Link>
