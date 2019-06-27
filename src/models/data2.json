@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Burgers",
+    "menu_items": [
+      {
+        "id": "550692c5-42d9-496f-8c07-7903126300e6",
+        "name": "Hamburger",
+        "sold_out": false,
+        "price": 7.29
+      },
+      {
+        "id": "0ae8ebd5-6b78-4363-8a62-53613deee988",
+        "name": "Cheeseburger",
+        "sold_out": false,
+        "price": 7.99
+      },
+      {
+        "id": "e34b9475-dd9a-4d65-96e8-3ce25c08795b",
+        "name": "Bacon Burger",
+        "sold_out": false,
+        "price": 8.29
+      },
+      {
+        "id": "5f0c088c-0ffd-4094-b01e-a27dcff87a58",
+        "name": "Bacon Cheeseburger",
+        "sold_out": false,
+        "price": 8.99
+      },
+      {
+        "id": "a9a183f0-76fc-47ed-8179-bf540db3746f",
+        "name": "Little Hamburger",
+        "sold_out": false,
+        "price": 5.29
+      },
+      {
+        "id": "8a8b4ac4-3b6f-4654-8c6d-a0c10813373c",
+        "name": "Little Cheeseburger",
+        "sold_out": false,
+        "price": 5.99
+      },
+      {
+        "id": "a90651bf-9c1f-4066-a26d-3a2719b036ae",
+        "name": "Little Bacon Burger",
+        "sold_out": false,
+        "price": 6.29
+      },
+      {
+        "id": "13474e67-b314-44b5-bcdf-aef48384a6a3",
+        "name": "Little Bacon Cheeseburger",
+        "sold_out": false,
+        "price": 6.99
+      }
+    ]
+  },
+  {
+    "title": "Dogs",
+    "menu_items": [
+      {
+        "id": "9f919231-2bfb-47e4-b2b6-8aa7c925ad64",
+        "name": "Kosher Style Hot Dog",
+        "sold_out": false,
+        "price": 4.99
+      },
+      {
+        "id": "f9fd858a-74fa-4ed8-a0d1-dbf33765337c",
+        "name": "Cheese Dog",
+        "sold_out": false,
+        "price": 5.69
+      },
+      {
+        "id": "67a63504-38cd-4cac-926f-f1d4fcd9268f",
+        "name": "Bacon Dog",
+        "sold_out": false,
+        "price": 5.99
+      },
+      {
+        "id": "564b02bf-2f07-4b6e-89cb-ff03ac3f6c17",
+        "name": "Bacon Cheese Dog",
+        "sold_out": false,
+        "price": 6.69
+      }
+    ]
+  },
+  {
+    "title": "Sandwiches",
+    "menu_items": [
+      {
+        "id": "bae7711b-1d1a-40b6-88b0-fa5b4be52d9e",
+        "name": "Grilled Cheese Sandwich",
+        "sold_out": false,
+        "price": 4.49
+      },
+      {
+        "id": "8c411588-0f84-43b0-a1d1-f734e2bf7a3a",
+        "name": "BLT Sandwich",
+        "sold_out": false,
+        "price": 5.79
+      },
+      {
+        "id": "e986a06a-f8f5-43fb-8f8f-dc7adaa77bdd",
+        "name": "Veggie Sandwich",
+        "sold_out": false,
+        "price": 3.79
+      },
+      {
+        "id": "ed206551-fe2e-4321-9adc-941b3593f138",
+        "name": "Veggie Cheese Sandwich",
+        "sold_out": false,
+        "price": 4.49
+      }
+    ]
+  },
+  {
+    "title": "Fries",
+    "menu_items": [
+      {
+        "id": "f32b7acd-86a0-43e8-a1d0-393dde40f8a5",
+        "name": "Little Fries",
+        "sold_out": false,
+        "price": 3.49
+      },
+      {
+        "id": "4c4818cd-12ad-4eae-a5d8-a8cc32297090",
+        "name": "Regular Fries",
+        "sold_out": false,
+        "price": 4.49
+      },
+      {
+        "id": "9708acfc-13f1-449e-84b6-f7f29fcc86eb",
+        "name": "Large Fries",
+        "sold_out": false,
+        "price": 5.99
+      },
+      {
+        "id": "ee634196-4e7e-4b16-8bd1-3c42d10b4170",
+        "name": "Little Cajun Fries",
+        "sold_out": false,
+        "price": 3.49
+      },
+      {
+        "id": "71d9b463-646a-46c5-b247-f725ec39310c",
+        "name": "Regular Cajun Fries",
+        "sold_out": false,
+        "price": 4.49
+      },
+      {
+        "id": "4fea898c-e1f5-4e06-9de1-30a4d4adf619",
+        "name": "Large Cajun Fries",
+        "sold_out": false,
+        "price": 5.99
+      }
+    ]
+  },
+  {
+    "title": "Drinks",
+    "menu_items": [
+      {
+        "id": "ce140759-846a-452e-aa0e-6a811ab99a4c",
+        "name": "Bottled Soda",
+        "sold_out": false,
+        "price": 2.59
+      },
+      {
+        "id": "8f002e6c-d701-460c-95aa-ce85e2a88940",
+        "name": "Dasani",
+        "sold_out": false,
+        "price": 1.69
+      },
+      {
+        "id": "5830beab-f824-4e05-92cd-858a5abae677",
+        "name": "Simply Lemonade",
+        "sold_out": false,
+        "price": 2.89
+      },
+      {
+        "id": "b2c9dc95-2b44-4f28-ab8d-6d66bbbb732b",
+        "name": "Honest Green Tea",
+        "sold_out": false,
+        "price": 2.89
+      }
+    ]
+  },
+  {
+    "title": "Shakes",
+    "menu_items": [
+      {
+        "id": "a7ce93fe-4720-49e6-a606-0a7bd549ae5e",
+        "name": "Milkshake",
+        "sold_out": true,
+        "price": 4.49
+      }
+    ]
+  }
+]
