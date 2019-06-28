@@ -24,7 +24,8 @@ class Dashboard extends React.Component {
       isSoldOut: false,
       docked: true,
       transitions: true,
-      datePushed: "May 20, 2019 15:00"
+      datePushed: "May 20, 2019 15:00",
+      menu_items: []
     };
     this.onSetSidebarDocked = this.onSetSidebarDocked.bind(this);
     this.pushTimeStamp = this.pushTimeStamp.bind(this);
@@ -90,6 +91,16 @@ class Dashboard extends React.Component {
     });
   };
 
+  // renderSelected(menu_title) {
+  //   //let menu_title = filter by menu_title, the map array of menu_items
+  //   let menu_items = data.findIndex(i =>
+  //     i.title === menu_title
+  //     )
+  //   this.setState({
+  //     menu_items: menu_items
+  //   })
+  // }
+
   render() {
     const newTimeStamp = new Date().getTime();
 
@@ -106,6 +117,8 @@ class Dashboard extends React.Component {
               className="pb-5"
               renderAll={this.renderAll}
               datePushed={this.state.datePushed}
+              data={this.data}
+              renderSelected={this.renderSelected}
             />
             <div className="px-4 pb-5">
               {/* Render dynamic data onto dashboard */}
