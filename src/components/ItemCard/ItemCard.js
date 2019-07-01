@@ -57,20 +57,11 @@ class ItemCard extends React.Component {
               <Row className="pl-3 pt-1 pb-1">
                 <div className="item-price-card pr-2">$ {this.state.price}</div>
               </Row>
-              <Card.Text className="mt-3">
-                {/* {props.soldOut ?
-                <p className="itemSoldOutBtn">
-                  <span className="soldOutToggle mr-2 isSoldOut"><i className="fas fa-toggle-on"></i></span>
-                  Sold Out
-                </p> : 
-                <p className="itemSoldOutBtn text-muted">
-                  <span className="soldOutToggle mr-2"><i className="fas fa-toggle-off"></i></span>
-                  Sold Out
-                </p>} */}
+              <div className="mt-3">
                 <div className="d-flex">
                   <SoldOutSwitch className="pr-2" />
                 </div>
-              </Card.Text>
+              </div>
             </Col>
             {this.state.image ? (
               <Col md="6" className="item-img-overflow">

@@ -46,7 +46,7 @@ const Hero = props => (
                 ? "isActive filter-item category-text"
                 : "filter-item category-text"
             }
-            // onClick={() => this.state.renderSelected(menu.title)}
+            onClick={() => props.renderSelected(menu.title, menu.menu_items)}
           >
             {menu.title}
           </Nav.Link>

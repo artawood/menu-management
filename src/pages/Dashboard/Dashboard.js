@@ -15,17 +15,12 @@ class Dashboard extends React.Component {
     this.state = {
       data: data,
       showAll: true,
-      showBurgers: true,
-      showDogs: true,
-      showSandwiches: true,
-      showFries: true,
-      showDrinks: true,
-      showShakes: true,
       isSoldOut: false,
       docked: true,
       transitions: true,
       datePushed: "May 20, 2019 15:00",
-      menu_items: []
+      menu_items: [],
+      selected: false
     };
     this.onSetSidebarDocked = this.onSetSidebarDocked.bind(this);
     this.pushTimeStamp = this.pushTimeStamp.bind(this);
@@ -62,44 +57,13 @@ class Dashboard extends React.Component {
     });
   };
 
-  removeItem = id => {
-    let burgers = data.menu.item.filter(
-      item => item.section === "Burgers" && item.id !== id
-    );
-    let dogs = data.menu.item.filter(
-      item => item.section === "Dogs" && item.id !== id
-    );
-    let sandwiches = data.menu.item.filter(
-      item => item.section === "Sandwiches" && item.id !== id
-    );
-    let fries = data.menu.item.filter(
-      item => item.section === "Fries" && item.id !== id
-    );
-    let drinks = data.menu.item.filter(
-      item => item.section === "Drinks" && item.id !== id
-    );
-    let shakes = data.menu.item.filter(
-      item => item.section === "Shakes" && item.id !== id
-    );
+  renderSelected(title, menu_items) {
+    //create a function for filtering
+    alert(title + " " + "menu_items: " + menu_items);
     this.setState({
-      burgers: burgers,
-      dogs: dogs,
-      sandwiches: sandwiches,
-      fries: fries,
-      drinks: drinks,
-      shakes: shakes
+      menu_items: menu_items
     });
-  };
-
-  // renderSelected(menu_title) {
-  //   //let menu_title = filter by menu_title, the map array of menu_items
-  //   let menu_items = data.findIndex(i =>
-  //     i.title === menu_title
-  //     )
-  //   this.setState({
-  //     menu_items: menu_items
-  //   })
-  // }
+  }
 
   render() {
     const newTimeStamp = new Date().getTime();
@@ -117,7 +81,7 @@ class Dashboard extends React.Component {
               className="pb-5"
               renderAll={this.renderAll}
               datePushed={this.state.datePushed}
-              data={this.data}
+              data={this.state.data}
               renderSelected={this.renderSelected}
             />
             <div className="px-4 pb-5">
