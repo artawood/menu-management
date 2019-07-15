@@ -33,6 +33,7 @@ class SampleModal extends React.Component {
     this.state = {
       show: false,
       pushed: false,
+      pushComplete: false,
       thirdParties: [],
       pos: []
     };
@@ -45,7 +46,7 @@ class SampleModal extends React.Component {
     });
   }
   handleClose() {
-    this.setState({ show: false });
+    this.setState({ show: false, pushComplete: false });
   }
 
   handlePushingChanges() {
@@ -54,7 +55,7 @@ class SampleModal extends React.Component {
       pushed: true
     });
     setTimeout(() => {
-      this.setState({ pushed: false });
+      this.setState({ pushed: false, pushComplete: true });
     }, 3000);
   }
 
@@ -122,6 +123,36 @@ class SampleModal extends React.Component {
               alt="pushing"
             />
           </Modal.Body>
+        </Modal>
+
+        <Modal
+          show={this.state.pushComplete}
+          onHide={this.handleClose}
+          centered
+        >
+          <Modal.Body className="text-center">
+            <Modal.Title className="font-weight-bold">Error!</Modal.Title>
+            <h2>Changes failed to push</h2>
+            <p>
+              Please contact{" "}
+              <a href="mailto:support@itsacheckmate.com">
+                support@itsacheckmate.com
+              </a>{" "}
+              for help.
+            </p>
+          </Modal.Body>
+          <Modal.Footer className="mx-auto">
+            <Button
+              variant="primary"
+              className="cm-btn-primary"
+              onClick={this.handleClose}
+            >
+              Retry
+            </Button>
+            <Button variant="outline-secondary" onClick={this.handleClose}>
+              Cancel
+            </Button>
+          </Modal.Footer>
         </Modal>
       </div>
     );

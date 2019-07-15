@@ -108,6 +108,7 @@ p {
 
 .btn-primary:hover {
   background-color: #4a4a4a;
+  border-color: #4a4a4a;
 }
 
 .btn-outline-secondary {
@@ -116,8 +117,8 @@ p {
 }
 
 .btn-outline-secondary:hover {
-  background-color: #0fa79c;
-  border-color: #0fa79c;
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
 }
 
 /* custom table */

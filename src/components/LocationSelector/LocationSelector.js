@@ -5,12 +5,10 @@ import "./LocationSelector.css";
 import data from "../../models/data.json";
 
 class LocationSelector extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "AL0193"
-    };
-  }
+  state = {
+    value: {}
+  };
+
   render() {
     return (
       <Dropdown

@@ -12,11 +12,9 @@ const ModifierList = props => (
       <td className="text-center">{props.groupMax}</td>
       <td className="text-center">
         {props.soldOut ? (
-          <i class="fas fa-check" />
+          <span>Sold Out</span>
         ) : (
-          <span className="text-muted">
-            <i class="far fa-square" />
-          </span>
+          <span className="text-muted" />
         )}
       </td>
     </tr>
