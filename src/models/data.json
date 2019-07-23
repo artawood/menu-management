@@ -451,7 +451,7 @@
             "groupName": "Unlimited Toppings",
             "groupMin": 0,
             "groupMax": 22,
-            "soldOut": false
+            "soldOut": true
           },
           {
             "id": 9,

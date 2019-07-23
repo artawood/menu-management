@@ -103,7 +103,7 @@ class EditModifierList extends React.Component {
         ) : (
           <i class="far fa-square" />
         )} */}
-            <ToggleSwitch />
+            <ToggleSwitch enabled={this.props.soldOut ? false : true} />
           </td>
           <td className="text-center">
             <span>

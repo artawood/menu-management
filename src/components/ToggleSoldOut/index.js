@@ -66,7 +66,10 @@ class ToggleSwitch extends Component {
       `switch-toggle--${enabled ? "on" : "off"}`
     );
 
-    const togglerSoldOut = classnames("", `${enabled ? "itemSoldOut" : ""}`);
+    const togglerSoldOut = classnames(
+      "",
+      `${enabled ? "itemAvailable" : "itemSoldOut"}`
+    );
 
     return (
       <Row>
@@ -79,7 +82,12 @@ class ToggleSwitch extends Component {
           <div className={togglerClasses} />
         </Col>
         <Col xs="8">
-          <span className={togglerSoldOut}>Sold Out</span>
+          {/* if enable is true, mark item as available. if enable is false, mark item as sold out */}
+          {enabled ? (
+            <span className={togglerSoldOut}>Available</span>
+          ) : (
+            <span className={togglerSoldOut}>Sold Out</span>
+          )}
         </Col>
       </Row>
     );

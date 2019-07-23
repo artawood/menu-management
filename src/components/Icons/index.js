@@ -2,6 +2,7 @@ export * from "./Add";
 export * from "./Close";
 export * from "./Edit";
 export * from "./Fetch";
+export * from "./Hamburger";
 export * from "./Home";
 export * from "./LogOut";
 export * from "./Menu";

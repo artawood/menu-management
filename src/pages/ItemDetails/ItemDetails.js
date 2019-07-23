@@ -110,7 +110,7 @@ class ItemDetails extends Component {
                 <th>Modifier Group Name</th>
                 <th>Modifier Group Min</th>
                 <th>Modifier Group Max</th>
-                <th>Sold Out</th>
+                <th>Available</th>
               </tr>
             </thead>
             {this.state.item.modifier.map(modifier => (

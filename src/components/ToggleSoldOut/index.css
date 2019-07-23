@@ -45,8 +45,8 @@
   transform: translateX(17px);
 }
 .switch.switch--default > .switch-toggle.switch-toggle--off::before {
-  background: #909090 !important;
-  color: #909090;
+  background: #d52b2b !important;
+  color: #d52b2b;
 }
 .switch.switch--default > .switch-toggle.switch-toggle--off::after {
   transform: translateX(2px);
@@ -87,30 +87,31 @@
   transition: transform 0.4s ease-out;
 }
 .switch.switch--graphite-small > .switch-toggle.switch-toggle--on::before {
-  background: gray !important;
+  background: #d52b2b !important;
 }
 .switch.switch--graphite-small > .switch-toggle.switch-toggle--on::after {
   transform: translateX(14.5px);
 }
 .switch.switch--graphite-small > .switch-toggle.switch-toggle--off::before {
-  background: #cccccc !important;
+  background: #d52b2b !important;
 }
 .switch.switch--graphite-small > .switch-toggle.switch-toggle--off::after {
   transform: translateX(2px);
 }
 
 .switch-toggleSoldOut--on {
-  color: #909090;
+  color: #d52b2b;
 }
 
 .switch-toggleSoldOut--off {
   color: #04a89b;
 }
 
-.itemSoldOut {
+.itemAvailable {
   color: #04a89b;
 }
 
-.itemSoldOut-off {
-  color: #909090;
+.itemSoldOut {
+  color: #d52b2b;
+  font-weight: 500;
 }

@@ -59,7 +59,10 @@ class ItemCard extends React.Component {
               </Row>
               <div className="mt-3">
                 <div className="d-flex">
-                  <SoldOutSwitch className="pr-2" />
+                  <SoldOutSwitch
+                    enabled={this.props.soldOut ? false : true}
+                    className="pr-2"
+                  />
                 </div>
               </div>
             </Col>

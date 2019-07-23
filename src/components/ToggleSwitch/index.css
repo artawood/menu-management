@@ -45,8 +45,8 @@
   transform: translateX(17px);
 }
 .switch.switch--default > .switch-toggle.switch-toggle--off::before {
-  background: #909090 !important;
-  color: #909090;
+  background: #d52b2b !important;
+  color: #d52b2b;
 }
 .switch.switch--default > .switch-toggle.switch-toggle--off::after {
   transform: translateX(2px);

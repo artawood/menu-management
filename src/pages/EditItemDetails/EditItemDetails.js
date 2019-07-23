@@ -170,7 +170,7 @@ class EditItemDetails extends Component {
                 <th>Modifier Group Name</th>
                 <th>Modifier Group Min</th>
                 <th>Modifier Group Max</th>
-                <th>Sold Out</th>
+                <th>Available</th>
                 <th>Delete</th>
               </tr>
             </thead>
